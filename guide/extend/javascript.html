@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>javascript 兼容 | 小苏同学</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="./logo.jpg">
+    <meta name="description" content="前端程序员一枚">
+    
+    <link rel="preload" href="/assets/css/0.styles.abb8bfd6.css" as="style"><link rel="preload" href="/assets/js/app.d35ec338.js" as="script"><link rel="preload" href="/assets/js/2.b8e5fd1e.js" as="script"><link rel="preload" href="/assets/js/11.eb74cf3c.js" as="script"><link rel="prefetch" href="/assets/js/10.162cb0ff.js"><link rel="prefetch" href="/assets/js/12.719957e7.js"><link rel="prefetch" href="/assets/js/13.63f958e3.js"><link rel="prefetch" href="/assets/js/14.849a6720.js"><link rel="prefetch" href="/assets/js/15.1fdfbe54.js"><link rel="prefetch" href="/assets/js/16.b50de56e.js"><link rel="prefetch" href="/assets/js/17.8e222069.js"><link rel="prefetch" href="/assets/js/18.b692bd39.js"><link rel="prefetch" href="/assets/js/19.147e6878.js"><link rel="prefetch" href="/assets/js/20.2eeb4cec.js"><link rel="prefetch" href="/assets/js/21.46705d82.js"><link rel="prefetch" href="/assets/js/22.d3dc3b15.js"><link rel="prefetch" href="/assets/js/23.4dd98101.js"><link rel="prefetch" href="/assets/js/24.f78894a2.js"><link rel="prefetch" href="/assets/js/25.cb2af0b2.js"><link rel="prefetch" href="/assets/js/26.411e78f5.js"><link rel="prefetch" href="/assets/js/27.cc45da65.js"><link rel="prefetch" href="/assets/js/28.778df0d5.js"><link rel="prefetch" href="/assets/js/29.f4e22c60.js"><link rel="prefetch" href="/assets/js/3.64a8a531.js"><link rel="prefetch" href="/assets/js/30.70489231.js"><link rel="prefetch" href="/assets/js/31.2cd76613.js"><link rel="prefetch" href="/assets/js/32.b4432153.js"><link rel="prefetch" href="/assets/js/33.f46acb4d.js"><link rel="prefetch" href="/assets/js/34.6a02bb7a.js"><link rel="prefetch" href="/assets/js/35.a65792a5.js"><link rel="prefetch" href="/assets/js/36.bcec4a39.js"><link rel="prefetch" href="/assets/js/37.a6268d29.js"><link rel="prefetch" href="/assets/js/38.a2f608ab.js"><link rel="prefetch" href="/assets/js/39.5b51ee6c.js"><link rel="prefetch" href="/assets/js/4.544c38eb.js"><link rel="prefetch" href="/assets/js/40.75dfee7a.js"><link rel="prefetch" href="/assets/js/41.01b1c8a8.js"><link rel="prefetch" href="/assets/js/42.316a0824.js"><link rel="prefetch" href="/assets/js/43.52095f5a.js"><link rel="prefetch" href="/assets/js/44.f69ad5f4.js"><link rel="prefetch" href="/assets/js/45.3f0cfbf1.js"><link rel="prefetch" href="/assets/js/46.a9943780.js"><link rel="prefetch" href="/assets/js/47.d2dfcefc.js"><link rel="prefetch" href="/assets/js/48.85450355.js"><link rel="prefetch" href="/assets/js/49.3a49d47a.js"><link rel="prefetch" href="/assets/js/5.c5a42027.js"><link rel="prefetch" href="/assets/js/50.37014eda.js"><link rel="prefetch" href="/assets/js/51.56cf4b78.js"><link rel="prefetch" href="/assets/js/52.2fe7fe66.js"><link rel="prefetch" href="/assets/js/53.f96a00f3.js"><link rel="prefetch" href="/assets/js/54.60f2d65d.js"><link rel="prefetch" href="/assets/js/55.0b30e8d2.js"><link rel="prefetch" href="/assets/js/56.27f27661.js"><link rel="prefetch" href="/assets/js/57.08d4d4ed.js"><link rel="prefetch" href="/assets/js/58.ff4547aa.js"><link rel="prefetch" href="/assets/js/59.440bc1ba.js"><link rel="prefetch" href="/assets/js/6.a72b95d8.js"><link rel="prefetch" href="/assets/js/60.716e0c53.js"><link rel="prefetch" href="/assets/js/61.92a03e01.js"><link rel="prefetch" href="/assets/js/62.4f6fb9e1.js"><link rel="prefetch" href="/assets/js/63.8db0579b.js"><link rel="prefetch" href="/assets/js/64.8013e78a.js"><link rel="prefetch" href="/assets/js/65.5f377dc6.js"><link rel="prefetch" href="/assets/js/66.4d18d575.js"><link rel="prefetch" href="/assets/js/67.56f4768a.js"><link rel="prefetch" href="/assets/js/68.c6cc9e03.js"><link rel="prefetch" href="/assets/js/69.186bded3.js"><link rel="prefetch" href="/assets/js/7.068def6c.js"><link rel="prefetch" href="/assets/js/70.e5c50444.js"><link rel="prefetch" href="/assets/js/71.7f479126.js"><link rel="prefetch" href="/assets/js/72.27776bbd.js"><link rel="prefetch" href="/assets/js/73.3025c51b.js"><link rel="prefetch" href="/assets/js/74.e0572ecb.js"><link rel="prefetch" href="/assets/js/75.251f0471.js"><link rel="prefetch" href="/assets/js/76.03c8bde3.js"><link rel="prefetch" href="/assets/js/77.db78cbc3.js"><link rel="prefetch" href="/assets/js/8.aa216c89.js"><link rel="prefetch" href="/assets/js/9.3120a497.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.abb8bfd6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小苏同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="扩展" class="dropdown-title"><span class="title">扩展</span> <span class="arrow down"></span></button> <button type="button" aria-label="扩展" class="mobile-dropdown-title"><span class="title">扩展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/ajax&amp;axios.html" class="nav-link">
+  ajax和axios
+</a></li><li class="dropdown-subitem"><a href="/guide/extend/javascript.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  javascript兼容
+</a></li></ul></li><li class="dropdown-item"><h4>
+          包管理工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/nvm&amp;npm&amp;yarn.html" class="nav-link">
+  nvm、npm和yarn
+</a></li></ul></li><li class="dropdown-item"><h4>
+          常用快捷键
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/code.html" class="nav-link">
+  快捷键
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具箱" class="dropdown-title"><span class="title">工具箱</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具箱" class="mobile-dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          在线编辑
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.bitbug.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ico图标制作
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://www.spritecow.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  精灵图测量
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          程序员社区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://segmentfault.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  思否
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          程序员文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6-阮一峰
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="扩展" class="dropdown-title"><span class="title">扩展</span> <span class="arrow down"></span></button> <button type="button" aria-label="扩展" class="mobile-dropdown-title"><span class="title">扩展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/ajax&amp;axios.html" class="nav-link">
+  ajax和axios
+</a></li><li class="dropdown-subitem"><a href="/guide/extend/javascript.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  javascript兼容
+</a></li></ul></li><li class="dropdown-item"><h4>
+          包管理工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/nvm&amp;npm&amp;yarn.html" class="nav-link">
+  nvm、npm和yarn
+</a></li></ul></li><li class="dropdown-item"><h4>
+          常用快捷键
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/code.html" class="nav-link">
+  快捷键
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具箱" class="dropdown-title"><span class="title">工具箱</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具箱" class="mobile-dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          在线编辑
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.bitbug.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ico图标制作
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://www.spritecow.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  精灵图测量
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          程序员社区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://segmentfault.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  思否
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          程序员文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6-阮一峰
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="javascript-兼容"><a href="#javascript-兼容" class="header-anchor">#</a> javascript 兼容</h2> <h3 id="_1、ios-日期的兼容"><a href="#_1、ios-日期的兼容" class="header-anchor">#</a> 1、iOS 日期的兼容</h3> <p>ios 下 new Date('2020-03-11 00:00:00') 不生效，需要对日期进行 date.replace(/-/g, '/') 处理。</p> <h3 id="_2、ios-的-beforeunload-事件的兼容"><a href="#_2、ios-的-beforeunload-事件的兼容" class="header-anchor">#</a> 2、iOS 的 beforeunload 事件的兼容</h3> <p>ios 下 beforeunload 事件废弃了，需要使用 pagehide 事件替代。</p> <h3 id="_3、android-下-点击-input-框键盘将页面顶起"><a href="#_3、android-下-点击-input-框键盘将页面顶起" class="header-anchor">#</a> 3、Android 下，点击 input 框键盘将页面顶起</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue</span>
+<span class="token operator">&lt;</span>input ref<span class="token operator">=</span><span class="token string">&quot;input&quot;</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">&quot;form.name&quot;</span> placeholder<span class="token operator">=</span><span class="token string">&quot;请输入您的名字&quot;</span> @input<span class="token operator">=</span><span class="token string">&quot;inputVal&quot;</span> @focus<span class="token operator">=</span><span class="token string">&quot;focus&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token comment">// ... </span>
+<span class="token function">focus</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> u <span class="token operator">=</span> navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> isAndroid <span class="token operator">=</span> u<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">&quot;Android&quot;</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span> u<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">&quot;Adr&quot;</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 判断机型，android终端</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>isAndroid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> that <span class="token operator">=</span> <span class="token keyword">this</span>
+    <span class="token keyword">const</span> originalHeight <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight <span class="token operator">||</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientHeight
+    window<span class="token punctuation">.</span><span class="token function-variable function">onresize</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> resizeHeight <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight <span class="token operator">||</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>clientHeight
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>resizeHeight <span class="token operator">-</span> <span class="token number">0</span> <span class="token operator">&lt;</span> originalHeight <span class="token operator">-</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        that<span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>input<span class="token punctuation">.</span>style<span class="token punctuation">.</span>bottom <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>originalHeight <span class="token operator">-</span> resizeHeight<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">px</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        that<span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>input<span class="token punctuation">.</span>style<span class="token punctuation">.</span>bottom <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">0px</span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+</code></pre></div><h3 id="_4、ios-点击-input-框键盘将底部按钮顶起-正常需要隐藏底部按钮"><a href="#_4、ios-点击-input-框键盘将底部按钮顶起-正常需要隐藏底部按钮" class="header-anchor">#</a> 4、iOS 点击 input 框键盘将底部按钮顶起，正常需要隐藏底部按钮</h3> <p>因为是点击input后触发的问题，所以应该在input聚焦时处理，也就是放在focus事件中改变页面的top值。
+下面是解决该问题的大概的模板：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue</span>
+<span class="token operator">&lt;</span>input ref<span class="token operator">=</span><span class="token string">&quot;input&quot;</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">&quot;form.name&quot;</span> placeholder<span class="token operator">=</span><span class="token string">&quot;请输入您的名字&quot;</span> @input<span class="token operator">=</span><span class="token string">&quot;inputVal&quot;</span> @focus<span class="token operator">=</span><span class="token string">&quot;focus&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token comment">// ...</span>
+<span class="token function">focus</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> u <span class="token operator">=</span> navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> isiOS <span class="token operator">=</span> <span class="token operator">!</span><span class="token operator">!</span>u<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\(i[^;]+;( U;)? CPU.+Mac OS X</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span> <span class="token comment">// 判断机型，ios终端</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>isiOS<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;focusin&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 软键盘弹出的事件处理</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>isShowFooterBar <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;focusout&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 软键盘收起的事件处理</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>isShowFooterBar <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>【拓展】
+ios：focusin 和 focusout 事件支持冒泡，分别对应 focus 和 blur 事件。
+上面的方法中，之所以使用 focusin 和 focusout 的原因是：假设有多个输入框需要处理，这样就可以使用事件代理来处理多个输入框存在的情况了。</p> <h3 id="_5、ios-键盘收起-页面底部出现空白问题"><a href="#_5、ios-键盘收起-页面底部出现空白问题" class="header-anchor">#</a> 5、iOS 键盘收起，页面底部出现空白问题</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// vue</span>
+<span class="token operator">&lt;</span>input ref<span class="token operator">=</span><span class="token string">&quot;input&quot;</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">&quot;form.name&quot;</span> placeholder<span class="token operator">=</span><span class="token string">&quot;请输入您的名字&quot;</span> @input<span class="token operator">=</span><span class="token string">&quot;inputVal&quot;</span> @blur<span class="token punctuation">.</span>prevent<span class="token operator">=</span><span class="token string">&quot;blur&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token comment">// ...</span>
+<span class="token function">blur</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  window<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="_6、android-和-ios-下-表单的-input-事件和-change-事件"><a href="#_6、android-和-ios-下-表单的-input-事件和-change-事件" class="header-anchor">#</a> 6、Android 和 iOS 下，表单的 input 事件和 change 事件</h3> <p>ios11之后，有些情况使用 input 事件 ios 自带的输入法，当选择拼音输入时会自动输入多个字符，这是因为有时 ios 对 input 事件不兼容导致的，使用 change 事件即可解决这个问题。</p> <p>ios 收起输入法时会失去焦点，触发 change 事件，但是 Android 收起输入法时并不会失去焦点，所以可以通过判断 UA（navigator.userAgent） 的方式来针对不同系统使用不同的事件。</p> <h2 id="css兼容"><a href="#css兼容" class="header-anchor">#</a> CSS兼容</h2> <h3 id="_1、ios-下-input-框聚焦时出现-outline-或者阴影"><a href="#_1、ios-下-input-框聚焦时出现-outline-或者阴影" class="header-anchor">#</a> 1、iOS 下，input 框聚焦时出现 outline 或者阴影</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">input:focus</span><span class="token punctuation">{</span><span class="token property">outline</span><span class="token punctuation">:</span>none<span class="token punctuation">}</span>  <span class="token selector">// 去除外边框
+input:</span><span class="token punctuation">{</span><span class="token property">-webkit-appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="_2、android-和-ios-下-设置-input-框禁止选择内容"><a href="#_2、android-和-ios-下-设置-input-框禁止选择内容" class="header-anchor">#</a> 2、Android 和 iOS 下，设置 input 框禁止选择内容</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// android 中这样实现
+input</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-user-select</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-moz-user-select</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-khtml-user-select</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">user-select</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">// ios 中应当将上述样式中的属性 -webkit-user-select 的值由 none 改为 auto
+input</span> <span class="token punctuation">{</span>
+  <span class="token property">-webkit-user-select</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="_3、ios-改变-input-框的默认-placeholder-属性样式"><a href="#_3、ios-改变-input-框的默认-placeholder-属性样式" class="header-anchor">#</a> 3、iOS 改变 input 框的默认 placeholder 属性样式</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">input::-webkit-input-placeholder</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #bbb<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 0.3rem<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4、ios-下-input-框输入的内容偏上"><a href="#_4、ios-下-input-框输入的内容偏上" class="header-anchor">#</a> 4、iOS 下，input 框输入的内容偏上</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 给你 input 去除 line-height 属性，然后添加下面的样式
+input::-webkit-input-placeholder</span> <span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="_5、android-下-line-height-和-height-的兼容"><a href="#_5、android-下-line-height-和-height-的兼容" class="header-anchor">#</a> 5、Android 下 line-height 和 height 的兼容</h3> <p>对于一般PC浏览器以及iOS设备的浏览器表现就是我们想要的居中效果，但是大部分 Android 设备的浏览器文字都会稍微向上偏离。
+结合行高、对齐的关系 和 伪元素，可以给当前元素添加以下样式来尝试解决该问题：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&amp;::before</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="_6、ios-下-解决-input-按钮-样式会被默认样式覆盖的问题"><a href="#_6、ios-下-解决-input-按钮-样式会被默认样式覆盖的问题" class="header-anchor">#</a> 6、iOS 下，解决 “input 按钮” 样式会被默认样式覆盖的问题</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">input, textarea</span> <span class="token punctuation">{</span>
+	<span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">-webkit-appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_7、ios-下-阻止图片在-微信-里被点击放大"><a href="#_7、ios-下-阻止图片在-微信-里被点击放大" class="header-anchor">#</a> 7、iOS 下，阻止图片在 微信 里被点击放大</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">img</span> <span class="token punctuation">{</span> <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_8、android-下-margin-top-失效"><a href="#_8、android-下-margin-top-失效" class="header-anchor">#</a> 8、Android 下，margin-top 失效</h3> <p>给其父元素添加 padding-top，代替该元素的 margin-top。</p> <h3 id="_9、android-下页面出现横向滚动条-ios-正常"><a href="#_9、android-下页面出现横向滚动条-ios-正常" class="header-anchor">#</a> 9、Android 下页面出现横向滚动条，iOS 正常</h3> <p>给该元素设置：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">overflow-x</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+</code></pre></div><h3 id="_10、android-下给页面设置-fixed-固定定位无效-ios-正常"><a href="#_10、android-下给页面设置-fixed-固定定位无效-ios-正常" class="header-anchor">#</a> 10、Android 下给页面设置 fixed 固定定位无效，iOS 正常</h3> <p>给该元素设置：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+</code></pre></div><h3 id="_11、ios-适配底部小横条-android-机上也可以调出这个小横条的"><a href="#_11、ios-适配底部小横条-android-机上也可以调出这个小横条的" class="header-anchor">#</a> 11、iOS 适配底部小横条（Android 机上也可以调出这个小横条的）</h3> <blockquote><p>此方案亦可解决：H5 嵌入式开发时，让页面适配端上提供的组件。</p></blockquote> <p>iOS 底部有个小横条，如何保证内容不被横条遮挡呢？最好的办法就是用 CSS 来做下兼容。</p> <p><strong>第一步：需要在 index.html 文件中的 <mate> 标签中增设 viewport-fit 属性来改变网页在可视窗口的布局方式</mate></strong></p> <p>viewport-fit 属性是 iOS11 新增的特性。苹果公司为了适配 iPhoneX 对现有 viewport meta 标签新增加的一个扩展，用于设置网页在可视窗口的布局方式。</p> <p>viewport-fit 可设置三个值：</p> <ul><li>auto：默认值，效果与 contain 一样。</li> <li>contain：可视窗口完全包含网页内容（类似于给 <img> 设置：object-fit: contain;）。</li> <li>cover：网页内容完全覆盖可是窗口（类似于给 <img> 设置：object-fit: cover;）。</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><p><strong>第二步：在需要兼容的页面中用 env() 和 constant() 这两个 CSS 函数来设定安全区域以及边界的距离。</strong></p> <p>env() 和 constant() 是 iOS11 新增的两个 CSS 特性，用来设定安全区域以及边界的距离。</p> <p>env() 和 constant() 可设置四个值：</p> <ul><li>safe-area-inset-left：安全区域离 左边 边界的距离。</li> <li>safe-area-inset-right：安全区域离 右边 边界的距离。</li> <li>safe-area-inset-top：安全区域离 顶部 边界的距离。</li> <li>safe-area-inset-bottom：安全区域离 底部 边界的距离。</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.box</span> <span class="token punctuation">{</span>
+	<span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+    <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 3.87rem<span class="token punctuation">;</span>
+    <span class="token property">padding-bottom</span><span class="token punctuation">:</span> <span class="token function">constant</span><span class="token punctuation">(</span>safe-area-inset-bottom<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* 兼容 iOS&lt;11.2 */</span>
+    <span class="token property">padding-bottom</span><span class="token punctuation">:</span> <span class="token function">env</span><span class="token punctuation">(</span>safe-area-inset-bottom<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* 兼容 iOS&gt;=11.2 */</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>【注意】constant 和 env 的先后顺序不能换。</p> <h3 id="_12、ios-中字体加粗无效-android-正常"><a href="#_12、ios-中字体加粗无效-android-正常" class="header-anchor">#</a> 12、iOS 中字体加粗无效 Android 正常</h3> <p>这是我遇到的一个问题，当时去掉 font-family 就好了。</p> <h3 id="_13、ios-下拉页面时-自定义的头部导航栏消失了"><a href="#_13、ios-下拉页面时-自定义的头部导航栏消失了" class="header-anchor">#</a> 13、iOS 下拉页面时，自定义的头部导航栏消失了</h3> <p>因为，iOS 自带的回弹特效不会触发 scroll 事件，也就导致 scrollTop 的值为 undefined。需要做一个兼容：默认是 0 就好了——<code>let scrollTop = e.target.scrollTop || 0</code>。</p> <h2 id="html-兼容"><a href="#html-兼容" class="header-anchor">#</a> html 兼容</h2> <h3 id="_1、ios-下-会将数字当成电话号码-导致变色"><a href="#_1、ios-下-会将数字当成电话号码-导致变色" class="header-anchor">#</a> 1、iOS 下，会将数字当成电话号码，导致变色</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>format-detection<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>telephone=no<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>x-rim-auto-match<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>none<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d35ec338.js" defer></script><script src="/assets/js/2.b8e5fd1e.js" defer></script><script src="/assets/js/11.eb74cf3c.js" defer></script>
+  </body>
+</html>
