@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1、什么是 Webpack(必会) | 小苏同学</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="./logo.jpg">
+    <meta name="description" content="前端程序员一枚">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d920bc0.css" as="style"><link rel="preload" href="/assets/js/app.799c955b.js" as="script"><link rel="preload" href="/assets/js/2.b8e5fd1e.js" as="script"><link rel="preload" href="/assets/js/33.72780d8e.js" as="script"><link rel="prefetch" href="/assets/js/10.173ba4a3.js"><link rel="prefetch" href="/assets/js/11.b0fcce45.js"><link rel="prefetch" href="/assets/js/12.1e75d2a0.js"><link rel="prefetch" href="/assets/js/13.20685699.js"><link rel="prefetch" href="/assets/js/14.2050ba9c.js"><link rel="prefetch" href="/assets/js/15.7ee8934e.js"><link rel="prefetch" href="/assets/js/16.f8c70433.js"><link rel="prefetch" href="/assets/js/17.f5f5445e.js"><link rel="prefetch" href="/assets/js/18.73a967f8.js"><link rel="prefetch" href="/assets/js/19.35743663.js"><link rel="prefetch" href="/assets/js/20.478b4be4.js"><link rel="prefetch" href="/assets/js/21.6109c918.js"><link rel="prefetch" href="/assets/js/22.de8afd3d.js"><link rel="prefetch" href="/assets/js/23.42e7ed51.js"><link rel="prefetch" href="/assets/js/24.e137eab3.js"><link rel="prefetch" href="/assets/js/25.617166c9.js"><link rel="prefetch" href="/assets/js/26.d1be1525.js"><link rel="prefetch" href="/assets/js/27.f843caff.js"><link rel="prefetch" href="/assets/js/28.02b3c64a.js"><link rel="prefetch" href="/assets/js/29.d1a6e48d.js"><link rel="prefetch" href="/assets/js/3.154f35b1.js"><link rel="prefetch" href="/assets/js/30.1a135e89.js"><link rel="prefetch" href="/assets/js/31.b1d91383.js"><link rel="prefetch" href="/assets/js/32.af62797f.js"><link rel="prefetch" href="/assets/js/34.d7f129f4.js"><link rel="prefetch" href="/assets/js/35.ee8cfdb9.js"><link rel="prefetch" href="/assets/js/36.8e449d62.js"><link rel="prefetch" href="/assets/js/37.e8a4f0e5.js"><link rel="prefetch" href="/assets/js/38.3f741454.js"><link rel="prefetch" href="/assets/js/39.e0f18441.js"><link rel="prefetch" href="/assets/js/4.f0f72fd4.js"><link rel="prefetch" href="/assets/js/40.fd9c914d.js"><link rel="prefetch" href="/assets/js/41.85e9036d.js"><link rel="prefetch" href="/assets/js/42.19852b80.js"><link rel="prefetch" href="/assets/js/43.bb830d8d.js"><link rel="prefetch" href="/assets/js/44.80cba45e.js"><link rel="prefetch" href="/assets/js/45.14fbd65d.js"><link rel="prefetch" href="/assets/js/46.9f520699.js"><link rel="prefetch" href="/assets/js/47.a099417c.js"><link rel="prefetch" href="/assets/js/48.107921c4.js"><link rel="prefetch" href="/assets/js/49.e9f5ca18.js"><link rel="prefetch" href="/assets/js/5.cec6138f.js"><link rel="prefetch" href="/assets/js/50.267bc72a.js"><link rel="prefetch" href="/assets/js/51.481dca6b.js"><link rel="prefetch" href="/assets/js/52.4af43417.js"><link rel="prefetch" href="/assets/js/53.ad1dca16.js"><link rel="prefetch" href="/assets/js/54.7d44d111.js"><link rel="prefetch" href="/assets/js/55.4b637917.js"><link rel="prefetch" href="/assets/js/56.2e70385a.js"><link rel="prefetch" href="/assets/js/57.64271518.js"><link rel="prefetch" href="/assets/js/58.444ba637.js"><link rel="prefetch" href="/assets/js/59.3b111ed5.js"><link rel="prefetch" href="/assets/js/6.a72b95d8.js"><link rel="prefetch" href="/assets/js/60.2403610f.js"><link rel="prefetch" href="/assets/js/61.99162c33.js"><link rel="prefetch" href="/assets/js/62.1f6c3fcd.js"><link rel="prefetch" href="/assets/js/63.986ad790.js"><link rel="prefetch" href="/assets/js/64.476d077e.js"><link rel="prefetch" href="/assets/js/65.290fc1ef.js"><link rel="prefetch" href="/assets/js/66.1436f5dd.js"><link rel="prefetch" href="/assets/js/67.033d993e.js"><link rel="prefetch" href="/assets/js/68.30869f66.js"><link rel="prefetch" href="/assets/js/69.e55e549d.js"><link rel="prefetch" href="/assets/js/7.8d321e7d.js"><link rel="prefetch" href="/assets/js/70.4c1c02fc.js"><link rel="prefetch" href="/assets/js/71.0ba0dc54.js"><link rel="prefetch" href="/assets/js/72.628926bf.js"><link rel="prefetch" href="/assets/js/73.03da4157.js"><link rel="prefetch" href="/assets/js/8.65eb0d86.js"><link rel="prefetch" href="/assets/js/9.509a395f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d920bc0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小苏同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  扩展
+</a></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  工具箱
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  扩展
+</a></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  工具箱
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/interview/webpack/webpack.html" class="sidebar-link">Webpack面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1、什么是-webpack-必会"><a href="#_1、什么是-webpack-必会" class="header-anchor">#</a> 1、什么是 Webpack(必会)</h2> <p>1、基本定义
+Webpack 是一个打包模块化 javascript 的工具，在 Webpack 里一切文件皆模块，通过</p> <p>loader 转换文件，通过 plugin 注入钩子，最后输出由多个模块组合成的文件，Webpack 专注构建 模块化项目，Webpack 可以看做是模块打包机:它做的事情是，分析你的项目结构，找到 JavaScript 模块以及其它的一些浏览器不能直接运行的拓展语言(Scss，TypeScript 等)，并将其打包为合适 的格式以供浏览器使用</p> <h2 id="_2、webpack-的优点是什么-必会"><a href="#_2、webpack-的优点是什么-必会" class="header-anchor">#</a> 2、Webpack 的优点是什么?(必会)</h2> <p>1、专注于处理模块化的项目，能做到开箱即用，一步到位 2、通过 plugin 扩展，完整好用又不失灵活 3、使用场景不局限于 web 开发</p> <p>4、社区庞大活跃，经常引入紧跟时代发展的新特性，能为大多数场景找到已有的开源扩展 5、提供了更好的开发体验</p> <h2 id="_3、webpack-的构建流程是什么-从读取配置到输出文件这个过程尽量-说全-必会"><a href="#_3、webpack-的构建流程是什么-从读取配置到输出文件这个过程尽量-说全-必会" class="header-anchor">#</a> 3、Webpack 的构建流程是什么?从读取配置到输出文件这个过程尽量 说全(必会)</h2> <p>Webpack 的运行流程是一个串行的过程，从启动到结束会依次执行以下流程: 1、初始化参数:从配置文件和 Shell 语句中读取与合并参数，得出最终的参数 2、开始编译:用上一步得到的参数初始化 Compiler 对象，加载所有配置的插件，执行对</p> <p>象的 run 方法开始执行编译
+3、确定入口:根据配置中的 entry 找出所有的入口文件 4、编译模块:从入口文件出发，调用所有配置的 Loader 对模块进行翻译，再找出该模块</p> <p>依赖的模块，再递归本步骤直到所有入口依赖的文件都经过了本步骤的处理 5、完成模块编译:在经过第 4 步使用 Loader 翻译完所有模块后，得到了每个模块被翻译</p> <p>后的最终内容以及它们之间的依赖关系 6、输出资源:根据入口和模块之间的依赖关系，组装成一个个包含多个模块的 Chunk，再</p> <p>把每个 Chunk 转换成一个单独的文件加入到输出列表，这步是可以修改输出内容的最后机会 7、输出完成:在确定好输出内容后，根据配置确定输出的路径和文件名，把文件内容写入 到文件系统，在以上过程中，Webpack 会在特定的时间点广播出特定的事件，插件在监听到感兴 趣的事件后会执行特定的逻辑，并且插件可以调用 Webpack 提供的 API 改变 Webpack 的运行</p> <p>结果</p> <h2 id="_4、说一下-webpack-的热更新原理-必会"><a href="#_4、说一下-webpack-的热更新原理-必会" class="header-anchor">#</a> 4、说一下 Webpack 的热更新原理(必会)</h2> <p>1、基本定义
+Webpack 的热更新又称热替换(Hot Module Replacement)，缩写为 HMR。这个机制可以</p> <p>做到不用刷新浏览器而将新变更的模块替换掉旧的模块。 2、核心定义</p> <p>2,1)HMR 的核心就是客户端从服务端拉去更新后的文件，准确的说是 chunk diff (chunk 需要更新的部分)，实际上 WDS 与浏览器之间维护了一个 websocket，当本地资源发生变化时， WDS 会向浏览器推送更新，并带上构建时的 hash，让客户端与上一次资源进行对比</p> <p>2,2)客户端对比出差异后会向 WDS 发起 Ajax 请求来获取更改内容(文件列表、hash)， 这样客户端就可以再借助这些信息继续向 WDS 发起 jsonp 请求获取该 chunk 的增量更新</p> <p>2,3)后续的部分(拿到增量更新之后如何处理?哪些状态该保留?哪些又需要更新?) 由 HotModulePlugin 来完成，提供了相关 API 以供开发者针对自身场景进行处理，像 react-hot-loader 和 vue-loader 都是借助这些 API 实现 HMR</p> <h2 id="_5、webpack-与-grunt、gulp-的不同-必会"><a href="#_5、webpack-与-grunt、gulp-的不同-必会" class="header-anchor">#</a> 5、Webpack 与 grunt、gulp 的不同?(必会)</h2> <p>1、三者之间的区别
+三者都是前端构建工具，grunt 和 gulp 在早期比较流行，现在 Webpack 相对来说比较主</p> <p>流，不过一些轻量化的任务还是会用 gulp 来处理，比如单独打包 CSS 文件等
+1,1)grunt 和 gulp 是基于任务和流(Task、Stream)的。类似 jQuery，找到一个(或一 类)文件，对其做一系列链式操作，更新流上的数据， 整条链式操作构成了一个任务，多个任</p> <p>务就构成了整个 web 的构建流程。
+1,2)Webpack 是基于入口的。Webpack 会自动地递归解析入口所需要加载的所有资源</p> <p>文件，然后用不同的 Loader 来处理不同的文件，用 Plugin 来扩展 Webpack 功能。 2、构建思路的区别</p> <p>2,1)gulp 和 grunt 需要开发者将整个前端构建过程拆分成多个<code>Task</code>，并合理控制所有 <code>Task</code>的调用关系</p> <p>2,2)Webpack 需要开发者找到入口，并需要清楚对于不同的资源应该使用什么 Loader 做何种解析和加工</p> <p>3、 从知识背景区别
+3,1)gulp 更像后端开发者的思路，需要对于整个流程了如指掌 3,2)Webpack 更倾向于前端开发者的思路</p> <h2 id="_6、有哪些常见的-loader-他们是解决什么问题的-必会"><a href="#_6、有哪些常见的-loader-他们是解决什么问题的-必会" class="header-anchor">#</a> 6、有哪些常见的 Loader?他们是解决什么问题的?(必会)</h2> <p>1、file-loader:把文件输出到一个文件夹中，在代码中通过相对 URL 去引用输出的文件</p> <p>2、url-loader:和 file-loader 类似，但是能在文件很小的情况下以 base64 的方式把文件内 容注入到代码中去</p> <p>3、source-map-loader:加载额外的 Source Map 文件，以方便断点调试 4、image-loader:加载并且压缩图片文件
+5、babel-loader:把 ES6 转换成 ES5
+6、css-loader:加载 CSS，支持模块化、压缩、文件导入等特性 7、style-loader:把 CSS 代码注入到 JavaScript 中，通过 DOM 操作去加载 CSS 8、eslint-loader:通过 ESLint 检查 JavaScript 代码</p> <h2 id="_7、loader-和-plugin-的不同-必会"><a href="#_7、loader-和-plugin-的不同-必会" class="header-anchor">#</a> 7、Loader 和 Plugin 的不同?(必会)</h2> <p>1、不同的作用
+1,1)Loader 直译为&quot;加载器&quot;。Webpack 将一切文件视为模块，但是 Webpack 原生是只</p> <p>能解析 js 文件，如果想将其他文件也打包的话，就会用到 loader。所以 Loader 的作用是让 Webpack 拥有了加载和解析非 JavaScript 文件的能力。</p> <p>1,2)Plugin 直译为&quot;插件&quot;，Plugin 可以扩展 Webpack 的功能，让 Webpack 具有更多的 灵活性。 在 Webpack 运行的生命周期中会广播出许多事件，Plugin 可以监听这些事件，在合适 的时机通过 Webpack 提供的 API 改变输出结果</p> <p>2、不同的用法
+2,1)Loader 在 module.rules 中配置，也就是说他作为模块的解析规则而存在。 类型为</p> <p>数组，每一项都是一个 Object，里面描述了对于什么类型的文件(test)，使用什么加载(loader) 和使用的参数(options)</p> <p>2,2)Plugin 在 plugins 中单独配置。 类型为数组，每一项是一个 plugin 的实例，参数 都通过构造函数传入</p> <h2 id="_8、如何利用-webpack-来优化前端性能-高薪常问"><a href="#_8、如何利用-webpack-来优化前端性能-高薪常问" class="header-anchor">#</a> 8、如何利用 Webpack 来优化前端性能(高薪常问)</h2> <p>1、压缩代码。uglifyJsPlugin 压缩 js 代码， mini-css-extract-plugin 压缩 css 代码
+2、利用 CDN 加速，将引用的静态资源修改为 CDN 上对应的路径，可以利用 Webpack 对 于 output 参数和 loader 的 publicpath 参数来修改资源路径
+3、删除死代码(tree shaking)，css 需要使用 Purify-CSS
+4、提取公共代码。Webpack4 移除了 CommonsChunkPlugin (提取公共代码)，用 optimization.splitChunks 和 optimization.runtimeChunk 来代替</p> <h2 id="_9、是否写过-loader-和-plugin-描述一下编写-loader-或-plugin-的思路-高薪常问"><a href="#_9、是否写过-loader-和-plugin-描述一下编写-loader-或-plugin-的思路-高薪常问" class="header-anchor">#</a> 9、是否写过 Loader 和 Plugin?描述一下编写 loader 或 plugin 的思路? (高薪常问)</h2> <p>1、基本定义
+Loader 像一个&quot;翻译官&quot;把读到的源文件内容转义成新的文件内容，并且每个 Loader 通</p> <p>过链式操作，将源文件一步步翻译成想要的样子。 1、 编写思路</p> <p>2.1)编写 Loader 时要遵循单一原则，每个 Loader 只做一种&quot;转义&quot;工作， 每个 Loader 的拿到的是源文件内容(source)，可以通过返回值的方式将处理后的内容输出，也可以调 用 this.callback()方法，将内容返回给 Webpack，还可以通过 this.async()生成一个 callback 函 数，再用这个 callback 将处理后的内容输出出去，此外 Webpack 还为开发者准备了开发 loader 的工具函数集——loader-utils</p> <p>2.2)相对于 Loader 而言，Plugin 的编写就灵活了许多， Webpack 在运行的生命周期中 会广播出许多事件，Plugin 可以监听这些事件，在合适的时机通过 Webpack 提供的 API 改 变输出结果
+2、 编写注意事项</p> <p>3.1)Loader 支持链式调用，所以开发上需要严格遵循“单一职责”，每个 Loader 只负责自 己需要负责的事情
+3.2)Loader 运行在 node.js 中，我们可以调用任意 node.js 自带的 API 或者安装第三方模 块进行调用</p> <p>3.3)Webpack 传给 Loader 的原内容都是 UTF-8 格式编码的字符串，当某些场景下 Loader 处理二进制文件时，需要通过 exports.raw = true 告诉 Webpack 该 Loader 是否需要 二进制数据</p> <p>3.4)尽可能的异步化 Loader，如果计算量很小，同步也可以 3.5)Loader 是无状态的，我们不应该在 Loader 中保留状态 3.6)使用 loader-utils 和 schema-utils 为我们提供的实用工具 3.7)加载本地 Loader 方法</p> <h2 id="_10、使用-webpack-开发时-你用过哪些可以提高效率的插件-高-薪常问"><a href="#_10、使用-webpack-开发时-你用过哪些可以提高效率的插件-高-薪常问" class="header-anchor">#</a> 10、使用 Webpack 开发时，你用过哪些可以提高效率的插件?(高 薪常问)</h2> <p>1、Webpack-dashboard:可以更友好的展示相关打包信息。 2、Webpack-merge:提取公共配置，减少重复配置代码 3、speed-measure-Webpack-plugin:简称 SMP，分析出 Webpack 打包过程中 Loader 和</p> <p>Plugin 的耗时，有助于找到构建过程中的性能瓶颈 4、size-plugin:监控资源体积变化，尽早发现问题 5、HotModuleReplacementPlugin:模块热替换</p> <h2 id="_11、什么是长缓存-在-webpack-中如何做到长缓存优化-高薪常-问"><a href="#_11、什么是长缓存-在-webpack-中如何做到长缓存优化-高薪常-问" class="header-anchor">#</a> 11、什么是长缓存?在 Webpack 中如何做到长缓存优化?(高薪常 问)</h2> <p>1、什么是长缓存 浏览器在用户访问页面的时候，为了加快加载速度，会对用户访问的静态资源进行存</p> <p>储，但是每一次代码升级或者更新，都需要浏览器去下载新的代码，最方便和最简单的更新方式</p> <p>就是引入新的文件名称 2、具体实现</p> <p>在 Webpack 中，可以在 output 给出输出的文件制定 chunkhash，并且分离经常更新的代 码和框架代码，通过 NameModulesPlugin 或者 HashedModulesPlugin 使再次打包文件名不变</p> <h2 id="_12、如何提高-webpack-的构建速度-高薪常问"><a href="#_12、如何提高-webpack-的构建速度-高薪常问" class="header-anchor">#</a> 12、如何提高 Webpack 的构建速度?(高薪常问)</h2> <p>在多入口情况下，使用 CommonsChunkPlugin 来提取公共代码
+1、通过 externals 配置来提取常用库
+2、利用 DllPlugin 和 DllReferencePlugin 预编译资源模块 通过 DllPlugin 来对那些我们引用但</p> <p>是绝对不会修改的 npm 包来进行预编译，再通过 DllReferencePlugin 将预编译的模块加载进来。 3、使用 Happypack 实现多线程加速编译
+4、使用 Webpack-uglify-parallel 来提升 uglifyPlugin 的压缩速度。 原理上</p> <p>Webpack-uglify-parallel 采用了多核并行压缩来提升压缩速度 5、使用 Tree-shaking 和 Scope Hoisting 来剔除多余代码</p> <h2 id="_13、怎么实现-webpack-的按需加载-什么是神奇注释-高薪常问"><a href="#_13、怎么实现-webpack-的按需加载-什么是神奇注释-高薪常问" class="header-anchor">#</a> 13、怎么实现 Webpack 的按需加载?什么是神奇注释?(高薪常问)</h2> <p>1、按需加载
+在 Webpack 中，import 不仅仅是 ES6 module 的模块导入方式，还是一个类似 require 的</p> <p>函数，我们可以通过 import('module')的方式引入一个模块，import()返回的是一个 Promise 对象; 使用 import()方式就可以实现 Webpack 的按需加载</p> <p>2、神奇注释
+在 import()里可以添加一些注释，如定义该 chunk 的名称，要过滤的文件，指定引入</p> <p>的文件等等，这类带有特殊功能的注释被称为神器注释</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.799c955b.js" defer></script><script src="/assets/js/2.b8e5fd1e.js" defer></script><script src="/assets/js/33.72780d8e.js" defer></script>
+  </body>
+</html>

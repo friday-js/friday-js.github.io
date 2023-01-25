@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1、 ES5 和 ES6 的区别，说几个 ES6 的新增方法(必会) | 小苏同学</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="./logo.jpg">
+    <meta name="description" content="前端程序员一枚">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d920bc0.css" as="style"><link rel="preload" href="/assets/js/app.799c955b.js" as="script"><link rel="preload" href="/assets/js/2.b8e5fd1e.js" as="script"><link rel="preload" href="/assets/js/16.f8c70433.js" as="script"><link rel="prefetch" href="/assets/js/10.173ba4a3.js"><link rel="prefetch" href="/assets/js/11.b0fcce45.js"><link rel="prefetch" href="/assets/js/12.1e75d2a0.js"><link rel="prefetch" href="/assets/js/13.20685699.js"><link rel="prefetch" href="/assets/js/14.2050ba9c.js"><link rel="prefetch" href="/assets/js/15.7ee8934e.js"><link rel="prefetch" href="/assets/js/17.f5f5445e.js"><link rel="prefetch" href="/assets/js/18.73a967f8.js"><link rel="prefetch" href="/assets/js/19.35743663.js"><link rel="prefetch" href="/assets/js/20.478b4be4.js"><link rel="prefetch" href="/assets/js/21.6109c918.js"><link rel="prefetch" href="/assets/js/22.de8afd3d.js"><link rel="prefetch" href="/assets/js/23.42e7ed51.js"><link rel="prefetch" href="/assets/js/24.e137eab3.js"><link rel="prefetch" href="/assets/js/25.617166c9.js"><link rel="prefetch" href="/assets/js/26.d1be1525.js"><link rel="prefetch" href="/assets/js/27.f843caff.js"><link rel="prefetch" href="/assets/js/28.02b3c64a.js"><link rel="prefetch" href="/assets/js/29.d1a6e48d.js"><link rel="prefetch" href="/assets/js/3.154f35b1.js"><link rel="prefetch" href="/assets/js/30.1a135e89.js"><link rel="prefetch" href="/assets/js/31.b1d91383.js"><link rel="prefetch" href="/assets/js/32.af62797f.js"><link rel="prefetch" href="/assets/js/33.72780d8e.js"><link rel="prefetch" href="/assets/js/34.d7f129f4.js"><link rel="prefetch" href="/assets/js/35.ee8cfdb9.js"><link rel="prefetch" href="/assets/js/36.8e449d62.js"><link rel="prefetch" href="/assets/js/37.e8a4f0e5.js"><link rel="prefetch" href="/assets/js/38.3f741454.js"><link rel="prefetch" href="/assets/js/39.e0f18441.js"><link rel="prefetch" href="/assets/js/4.f0f72fd4.js"><link rel="prefetch" href="/assets/js/40.fd9c914d.js"><link rel="prefetch" href="/assets/js/41.85e9036d.js"><link rel="prefetch" href="/assets/js/42.19852b80.js"><link rel="prefetch" href="/assets/js/43.bb830d8d.js"><link rel="prefetch" href="/assets/js/44.80cba45e.js"><link rel="prefetch" href="/assets/js/45.14fbd65d.js"><link rel="prefetch" href="/assets/js/46.9f520699.js"><link rel="prefetch" href="/assets/js/47.a099417c.js"><link rel="prefetch" href="/assets/js/48.107921c4.js"><link rel="prefetch" href="/assets/js/49.e9f5ca18.js"><link rel="prefetch" href="/assets/js/5.cec6138f.js"><link rel="prefetch" href="/assets/js/50.267bc72a.js"><link rel="prefetch" href="/assets/js/51.481dca6b.js"><link rel="prefetch" href="/assets/js/52.4af43417.js"><link rel="prefetch" href="/assets/js/53.ad1dca16.js"><link rel="prefetch" href="/assets/js/54.7d44d111.js"><link rel="prefetch" href="/assets/js/55.4b637917.js"><link rel="prefetch" href="/assets/js/56.2e70385a.js"><link rel="prefetch" href="/assets/js/57.64271518.js"><link rel="prefetch" href="/assets/js/58.444ba637.js"><link rel="prefetch" href="/assets/js/59.3b111ed5.js"><link rel="prefetch" href="/assets/js/6.a72b95d8.js"><link rel="prefetch" href="/assets/js/60.2403610f.js"><link rel="prefetch" href="/assets/js/61.99162c33.js"><link rel="prefetch" href="/assets/js/62.1f6c3fcd.js"><link rel="prefetch" href="/assets/js/63.986ad790.js"><link rel="prefetch" href="/assets/js/64.476d077e.js"><link rel="prefetch" href="/assets/js/65.290fc1ef.js"><link rel="prefetch" href="/assets/js/66.1436f5dd.js"><link rel="prefetch" href="/assets/js/67.033d993e.js"><link rel="prefetch" href="/assets/js/68.30869f66.js"><link rel="prefetch" href="/assets/js/69.e55e549d.js"><link rel="prefetch" href="/assets/js/7.8d321e7d.js"><link rel="prefetch" href="/assets/js/70.4c1c02fc.js"><link rel="prefetch" href="/assets/js/71.0ba0dc54.js"><link rel="prefetch" href="/assets/js/72.628926bf.js"><link rel="prefetch" href="/assets/js/73.03da4157.js"><link rel="prefetch" href="/assets/js/8.65eb0d86.js"><link rel="prefetch" href="/assets/js/9.509a395f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d920bc0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小苏同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  扩展
+</a></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  工具箱
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  扩展
+</a></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  工具箱
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/interview/es6/es6.html" class="sidebar-link">ES6面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1、-es5-和-es6-的区别-说几个-es6-的新增方法-必会"><a href="#_1、-es5-和-es6-的区别-说几个-es6-的新增方法-必会" class="header-anchor">#</a> 1、 ES5 和 ES6 的区别，说几个 ES6 的新增方法(必会)</h2> <p>ES5 和 ES6 的区别
+ECMAScript5，即 ES5，是 ECMAScript 的第五次修订，于 2009 年完成标准化 ECMAScript6，即 ES6，是 ECMAScript 的第六次修订，于 2015 年完成，也称 ES2015 ES6 是继 ES5 之后的一次改进，相对于 ES5 更加简洁，提高了开发效率</p> <p>ES6 的新增方法
+1、新增声明命令 let 和 const
+在 ES6 中通常用 let 和 const 来声明，let 表示变量、const 表示常量</p> <p>1.1)特点
+let 和 const 都是块级作用域。以{}代码块作为作用域范围 只能在代码块里面使用 不存在变量提升，只能先声明再使用，否则会报错。语法上，称为“暂时性死区” 在同一个代码块内，不允许重复声明</p> <p>const 声明的是一个只读常量，在声明时就需要赋值。(如果 const 的是一个对象，对 象所 包含的值是可以被修改的。抽象一点儿说，就是对象所指向的地址不能改变，而 变量成员是可以修改的。)</p> <p>2、模板字符串(Template String) 用一对反引号(`)标识，它可以当作普通字符串使用，也可以用来定义多行字符串，也可以 在字符串中嵌入变量，js 表达式或函数，变量、js 表达式或函数需要写在${ }中。 3、函数的扩展</p> <p>3.1)函数的默认参数</p> <p>ES6 为参数提供了默认值。在定义函数时便初始化了这个参数，以便在参数没有被传 递 进去 时使用。</p> <p>3.2)箭头函数</p> <p>在 ES6 中，提供了一种简洁的函数写法，我们称作“箭头函数”。 3.2.1)写法</p> <p>函数名=(形参)=&gt;{......} 当函数体中只有一个表达式时，{}和 return 可以省 略 当函数体中形参只有一个时，()可以省略。</p> <p>3.2.2)特点
+箭头函数中的 this 始终指向箭头函数定义时的离 this 最近的一个函数，如果没有最近</p> <p>的函数就指向 window。 4、对象的扩展</p> <p>4.1)属性的简写
+ES6 允许在对象之中，直接写变量。这时，属性名为变量名, 属性值为变量 的值。 var foo = 'bar';
+var baz = {foo}; //等同于 var baz = {foo: foo};
+方法的简写。省略冒号与 function 关键字。
+var o = {</p> <p>method() {
+return &quot;Hello!&quot;;</p> <p>} };</p> <p>// 等同于 var o = {</p> <p>method: function() { return &quot;Hello!&quot;;</p> <p>} };</p> <p>4.2)Object.keys()方法 获取对象的所有属性名或方法名(不包括原形的内容)，返回一个数组。
+var obj={name: &quot;john&quot;, age: &quot;21&quot;, getName: function () { alert(this.name)}}; console.log(Object.keys(obj)); // [&quot;name&quot;, &quot;age&quot;, &quot;getName&quot;] console.log(Object.keys(obj).length); //3
+console.log(Object.keys([&quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot;])); //[&quot;0&quot;, &quot;1&quot;, &quot;2&quot;] console.log(Object.keys(&quot;abcdef&quot;)); //[&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;]
+4.3)Object.assign ()
+assign 方法将多个原对象的属性和方法都合并到了目标对象上面。可以接收多个参数， 第一 个参数是目标对象，后面的都是源对象
+var target = {}; //目标对象
+var source1 = {name : 'ming', age: '19'}; //源对象 1
+var source2 = {sex : '女'}; //源对象 2
+var source3 = {sex : '男'}; //源对象 3，和 source2 中的对象有同名属性 sex Object.assign(target,source1,source2,source3);
+console.log(target); //{name : 'ming', age: '19', sex: '男'}</p> <p>5、for...of 循环
+var arr=[&quot;小林&quot;,&quot;小吴&quot;,&quot;小佳&quot;]; for(var v of arr){</p> <p>console.log(v); }</p> <p>//小林 //小吴 //小佳
+6、import 和 export
+ES6 标准中，JavaScript 原生支持模块(module)。这种将 JS 代码分割成不同功能的小块进行 模块化，将不同功能的代码分别写在不同文件中，各模块只需导出公共接口部分，然后通 过模块的导入的方式可以在其他地方使用
+export 用于对外输出本模块(一个文件可以理解为一个模块)变量的接口
+import 用于在一个模块中加载另一个含有 export 接口的模块</p> <p>import 和 export 命令只能在模块的顶部，不能在代码块之中
+7、Promise 对象
+Promise 是异步编程的一种解决方案，将异步操作以同步操作的流程表达出来，避免了层层 嵌套的回调函数，要是为了解决异步处理回调地狱(也就是循环嵌套的问题)而产生的 Promise 构造函数包含一个参数和一个带有 resolve(解析)和 reject(拒绝)两个参数的回 调。在回调中执行一些操作(例如异步)，如果一切都正常，则调用 resolve，否则调用 reject。 对于已经实例化过的 Promise 对象可以调用 Promise.then() 方法，传递 resolve 和 reject 方法作为回调。then()方法接收两个参数:onResolve 和 onReject，分别代表当前 Promise 对 象在成功或失败时
+Promise 的 3 种状态
+Fulfilled 为成功的状态，Rejected 为失败的状态，Pending 既不是 Fulfilld 也不是 Rejected 的状态，可以理解为 Promise 对象实例创建时候的初始状态</p> <p>7、 解构赋值
+8.1)数组的解构赋值
+解构赋值是对赋值运算符的扩展。 是一种针对数组或者对象进行模式匹配，然后对其中的变量进行赋值。 在代码书写上简洁且易读，语义更加清晰明了;也方便了复杂对象中数据字段获取。 数组中的值会自动被解析到对应接收该值的变量中，数组的解构赋值要一一对应如果 有对应不上的就是 undefined
+let [a, b, c] = [1, 2, 3];
+// a = 1 // b = 2 // c = 3
+8.2)对象的解构赋值</p> <p>对象的解构赋值和数组的解构赋值其实类似，但是数组的数组成员是有序的 而对象的属性则是无序的，所以对象的解构赋值简单理解是等号的左边和右边的</p> <p>结构 相同
+let { foo, bar } = { foo: 'aaa', bar: 'bbb' }; // foo = 'aaa' // bar = 'bbb' let { baz : foo } = { baz : 'ddd' }; // foo = 'ddd'</p> <p>9、Set 数据结构
+Set 数据结构，类似数组。所有的数据都是唯一的，没有重复的值。它本身是一个构造函数。</p> <p>9.1)Set 属性和方法
+Size() 数据的长度
+Add() 添加某个值，返回 Set 结构本身。
+Delete() 删除某个值，返回一个布尔值，表示删除是否成功。 Has() 查找某条数据，返回一个布尔值。 Clear()清除所有成员，没有返回值。 9.2)主要应用场景:数组去重</p> <p>10、class
+class 类的继承 ES6 中不再像 ES5 一样使用原型链实现继承，而是引入 Class 这个概念
+ES6 所写的类相比于 ES5 的优点:
+区别于函数，更加专业化(类似于 JAVA 中的类)
+写法更加简便，更加容易实现类的继承
+11、...
+展开运算符可以将数组或对象里面的值展开;还可以将多个值收集为一个变量 12、async、await
+使用 async/await, 搭配 Promise,可以通过编写形似同步的代码来处理异步流程, 提高代码 的简洁性和可读性 async 用于申明一个 function 是异步的，而 await 用于等待一个异步方 法执行完成
+13、修饰器
+@decorator 是一个函数，用来修改类甚至于是方法的行为。修饰器本质就是编译时执行的函 数
+14、Symbol
+Symbol 是一种基本类型。Symbol 通过调用 symbol 函数产生，它接收一个可选的名字参数，</p> <p>该函数返回的 symbol 是唯一的
+15、Proxy
+Proxy 代理使用代理(Proxy)监听对象的操作，然后可以做一些相应事情</p> <h2 id="_2、es6-的继承和-es5-的继承有什么区别-必会"><a href="#_2、es6-的继承和-es5-的继承有什么区别-必会" class="header-anchor">#</a> 2、ES6 的继承和 ES5 的继承有什么区别(必会)</h2> <p>ES6 的继承和 ES5 的继承的区别
+ES5 的继承是通过原型或者是构造函数机制来实现
+ES6 用过 class 关键字定义类，里面有构造方法，类之间通过 extends 关键字实现，子类必须 在 constructor 方法中调用 super 方法</p> <h2 id="_3、var、let、const-之间的区别-必会"><a href="#_3、var、let、const-之间的区别-必会" class="header-anchor">#</a> 3、var、let、const 之间的区别(必会)</h2> <p>区别
+var 声明变量可以重复声明，而 let 不可以重复声明
+var 是不受限于块级的，而 let 是受限于块级
+var 会与 window 相映射(会挂一个属性)，而 let 不与 window 相映射
+var 可以在声明的上面访问变量，而 let 有暂存死区，在声明的上面访问变量会报错 const 声明之后必须赋值，否则会报错
+const 定义不可变的量，改变了就会报错
+const 和 let 一样不会与 window 相映射、支持块级作用域、在声明的上面访问变量会报错</p> <h2 id="_4、class、extends-是什么-有什么作用-必会"><a href="#_4、class、extends-是什么-有什么作用-必会" class="header-anchor">#</a> 4、class、extends 是什么，有什么作用(必会)</h2> <p>什么是 class，class 的作用
+ES6 的 Class 可以看作只是一个 ES5 生成实例对象的构造函数的语法糖。
+它参考了 java 语言，定义了一个类的概念，让对象原型写法更加清晰，对象实例化更像是 一种面向对象编程。
+什么是 extends，extends 的作用
+extends 是 ES6 引入的关键字，其本质仍然是构造函数+原型链的组合式继承。
+class 类可以通过 extends 实现继承。
+class 和 ES5 构造函数的不同点
+1、类的内部定义的所有方法，都是不可枚举的。
+2、ES6 的 class 类必须用 new 命令操作，而 ES5 的构造函数不用 new 也可以执行。
+3、ES6 的 class 类不存在变量提升，必须先定义 class 之后才能实例化，不像 ES5 中可以将 构造函数写在实例化之后。
+4、ES5 的继承，实质是先创造子类的实例对象 this，然后再将父类的方法添加到 this 上面。 ES6 的继承机制完全不同，实质是先将父类实例对象的属性和方法，加到 this 上面(所以 必须先调用 super 方法)，然后再用子类的构造函数修改 this。</p> <h2 id="_5、module、export、import-有什么作用-必会"><a href="#_5、module、export、import-有什么作用-必会" class="header-anchor">#</a> 5、module、export、import 有什么作用(必会)</h2> <p>module、export、import 是 ES6 用来统一前端模块化方案的设计思路和实现方案。</p> <p>export、import 的出现统一了前端模块化的实现方案，整合规范了浏览器/服务端的模块化方 法，用来取代传统的 AMD/CMD、requireJS、seaJS、commondJS 等等一系列前端模块不同的 实 现方案，使前端模块化更加统一规范，JS 也能更加能实现大型的应用程序开发。</p> <p>import 引入的模块是静态加载(编译阶段加载)而不是动态加载(运行时加载)。</p> <p>import 引入 export 导出的接口值是动态绑定关系，即通过该接口，可以取到模块内部实时的 值。</p> <h2 id="_6、使用箭头函数应注意什么-箭头函数和普通函数的区别-必会"><a href="#_6、使用箭头函数应注意什么-箭头函数和普通函数的区别-必会" class="header-anchor">#</a> 6、使用箭头函数应注意什么/箭头函数和普通函数的区别(必会)</h2> <p>区别
+用了箭头函数，this 就不是指向 window，而是父级(指向是可变的) 不能够使用 arguments 对象
+不能用作构造函数，这就是说不能够使用 new 命令，否则会抛出一个错误 不可以使用 yield 命令，因此箭头函数不能用作 Generator 函数</p> <h2 id="_7、es6-的模板字符串有哪些新特性-并实现一个类模板字符串的功-能-必会"><a href="#_7、es6-的模板字符串有哪些新特性-并实现一个类模板字符串的功-能-必会" class="header-anchor">#</a> 7、ES6 的模板字符串有哪些新特性?并实现一个类模板字符串的功 能(必会)</h2> <p>模板字符串新特性
+基本的字符串格式化。将表达式嵌入字符串中进行拼接。用${}来界定
+在 ES5 时我们通过反斜杠(/)来做多行字符串或者字符串一行行拼接。ES6 反引号(``)就能解 决
+类模板字符串的功能
+实现一个类模板字符串的功能
+let name = 'sunny';
+let age = 21;
+let str = '
+str =</p> <p>return })</p> <p>console.log(str);//你好，sunny 已经 21 岁了</p> <h2 id="_8、介绍下-set、map-的区别-必会"><a href="#_8、介绍下-set、map-的区别-必会" class="header-anchor">#</a> 8、介绍下 Set、Map 的区别(必会)</h2> <p>区别
+应用场景 Set 用于数据重组，Map 用于数据储存 Set:
+成员不能重复
+只有键值没有键名，类似数组 可以遍历，方法有 add, delete,has
+Map:
+本质上是健值对的集合，类似集合 可以遍历，可以跟各种数据格式转换</p> <h2 id="_9、settimeout、promise、async-await-的区别-必会"><a href="#_9、settimeout、promise、async-await-的区别-必会" class="header-anchor">#</a> 9、setTimeout、Promise、Async/Await 的区别(必会)</h2> <p>事件循环中分为宏任务队列和微任务队列</p> <p>![page111image79179344](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)</p> <p>你好，${name}</p> <p>已经 ${age}岁了'</p> <p>![page111image79180176](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.png)</p> <p>str.replace(/${([^}]*)}/g,function(){</p> <p>![page111image79180384](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)</p> <p>eval(arguments[1]);</p> <p>宏任务(macrotask):在新标准中叫 task 主要包括:script(整体代码)，setTimeout，setInterval，setImmediate，I/O，ui rendering 微任务(microtask):在新标准中叫 jobs
+主要包括:process.nextTick， Promise，MutationObserver(html5 新特性) setTimeout、Promise、Async/Await 的区别
+setTimeout 的回调函数放到宏任务队列里，等到执行栈清空以后执行
+Promise.then 里的回调函数会放到相应宏任务的微任务队列里，等宏任务里面的同步代码执 行完再执行
+async 函数表示函数里面可能会有异步方法，await 后面跟一个表达式
+async 方法执行时，遇到 await 会立即执行表达式，然后把表达式后面的代码放到微任务队 列里，让出执行栈让同步代码先执行</p> <h2 id="_10、promise-有几种状态-什么时候会进入-catch-必会"><a href="#_10、promise-有几种状态-什么时候会进入-catch-必会" class="header-anchor">#</a> 10、Promise 有几种状态，什么时候会进入 catch?(必会)</h2> <p>Promise 有几种状态 三个状态:pending、fulfilled、reject 两个过程:padding -&gt; fulfilled、padding -&gt; rejected Promise 什么时候会进入 catch
+当 pending 为 rejected 时，会进入 catch</p> <h2 id="_11、es6-怎么写-class-为何会出现-class-必会"><a href="#_11、es6-怎么写-class-为何会出现-class-必会" class="header-anchor">#</a> 11、ES6 怎么写 class ，为何会出现 class(必会)</h2> <p>什么是 class，class 的作用
+ES6 的 class 可以看作是一个语法糖，它的绝大部分功能 ES5 都可以做到，新的 class 写法只 是让对象原型的写法更加清晰、更像面向对象编程的语法</p> <p>ES6 怎么写 class //定义类
+class Point {</p> <p>{ //</p> <p>this.x = x; //this 关键字代表实例对象</p> <p>this.y = y; } toString() {</p> <p>return '(' + this.x + ',' + this.y + ')'; }</p> <p>}</p> <h2 id="_12、如何获取多个-promise-最后整体结果-必会"><a href="#_12、如何获取多个-promise-最后整体结果-必会" class="header-anchor">#</a> 12、如何获取多个 Promise 最后整体结果?(必会)</h2> <p>使用 Promise.all()
+Promise.all()用于将多个 Promise 实例，包装成一个新的 Promise 实例 Promise.all()接受一个数组作为参数，数组里的元素都是 Promise 对象的实例，如果不是， 就会先调用下面讲到的 Promise.resolve()，将参数转为 Promise 实例，再进一步处理。 (Promise.all()方法的参数可以不是数组，但必须具有 Iterator 接口，且返回的每个成员都 是 Promise 实例。)
+示例:var p =Promise.all([p1,p2,p3])
+p 的状态由 p1、p2、p3 决定，分为两种情况。</p> <p>![page112image79272448](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)</p> <p>constructor(x,y)</p> <p>![page112image79272656](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)</p> <p>构造方法</p> <p>当该数组里的所有 Promise 实例都进入 Fulfilled 状态:Promise.all<strong>返回的实例才会变成 Fulfilled 状态。并将 Promise 实例数组的所有返回值组成一个数组，传递给 Promise.all 返回 实例的回调函数</strong>。
+当该数组里的某个 Promise 实例都进入 Rejected 状态:Promise.all 返回的实例会立即变成 Rejected 状态。并将第一个 rejected 的实例返回值传递给 Promise.all 返回实例的回调函数</p> <h2 id="_13、es6-如何转化为-es5-为什么要转化-必会"><a href="#_13、es6-如何转化为-es5-为什么要转化-必会" class="header-anchor">#</a> 13、ES6 如何转化为 ES5，为什么要转化(必会)</h2> <p>ES6 语法为什么要转化 ES5 语法</p> <p>ECMAScript2015，更新语法、规则、功能，浏览器对 ES6 的支持程度并不是很好，如果写 了 ES6 的代码，需要运行在浏览器上的时候，需要将 ES6 的代码转成 ES5 的代码去浏览器上 运 行。</p> <p>Babel 是什么</p> <p>babel 是一个 ES6 转码器，可以将 ES6 代码转为 ES5 代码，以便兼容那些还没支持 ES6 的 平台</p> <p>ES6 如何转化为 ES5</p> <p>![page113image79239056](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.jpg)![page113image79239680](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.jpg)</p> <p>![page114image79613808](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image008.jpg)![page114image79614224](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.jpg)![page114image79614432](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image010.jpg)</p> <h2 id="_14、日常前端代码开发中-有哪些值得用-es6-去改进的编程优化或者-规范-必会"><a href="#_14、日常前端代码开发中-有哪些值得用-es6-去改进的编程优化或者-规范-必会" class="header-anchor">#</a> 14、日常前端代码开发中，有哪些值得用 ES6 去改进的编程优化或者 规范(必会)</h2> <p>1、常用箭头函数来取代 var self = this;的做法。
+2、常用 let 取代 var 命令。 3、常用数组/对象的结构赋值来命名变量，结构更清晰，语义更明确，可读性更好。 4、在长字符串多变量组合场合，用模板字符串来取代字符串累加，能取得更好地效果和阅 读体验。
+5、用 class 类取代传统的构造函数，来生成实例化对象。
+6、在大型应用开发中，要保持 module 模块化开发思维，分清模块之间的关系，常用 import、 export 方法。</p> <h2 id="_15、es6-和-node-的-commonjs-模块化规范的区别-高薪常问"><a href="#_15、es6-和-node-的-commonjs-模块化规范的区别-高薪常问" class="header-anchor">#</a> 15、ES6 和 node 的 commonjs 模块化规范的区别(高薪常问)</h2> <p>ES6 是 js 的增强版，是 js 的语法规范，commonjs 都只是为了解决 js 文件之间的依赖和引用 问题，所以是一种 js 的包管理规范，其中的代表是 node 遵循 commonjs 规范</p> <h2 id="_16、promise-中-reject-和-catch-处理上有什么区别-高薪常问"><a href="#_16、promise-中-reject-和-catch-处理上有什么区别-高薪常问" class="header-anchor">#</a> 16、Promise 中 reject 和 catch 处理上有什么区别(高薪常问)</h2> <p>reject 是用来抛出异常，catch 是用来处理异常
+reject 是 Promise 的方法，而 catch 是 Promise 实例的方法
+reject 后的东西，一定会进入 then 中的第二个回调，如果 then 中没有写第二个回调，则进入 catch
+网络异常(比如断网)，会直接进入 catch 而不会进入 then 的第二个回调</p> <h2 id="_17、理解-async-await-以及相对-generator-的优势"><a href="#_17、理解-async-await-以及相对-generator-的优势" class="header-anchor">#</a> 17、理解 async/await 以及相对 Generator 的优势</h2> <p>理解 async await
+async await 是用来解决异步的，async 函数是 Generator 函数的语法糖
+使用关键字 async 来表示，在函数内部使用 await 来表示异步
+async 函数返回一个 Promise 对象，可以使用 then 方法添加回调函数 当函数执行的时候，一旦遇到 await 就会先返回，等到异步操作完成，再接着执行函数体内 后面的语句
+async 较 Generator 的优势
+1、内置执行器
+Generator 函数的执行必须依靠执行器，而 Aysnc 函数自带执行器，调用方式</p> <p>函数的调用一样 2、更好的语义</p> <p>async 和 await 相较于 * 和 yield 更加语义化
+3、更广的适用性
+yield 命令后面只能是 Thunk 函数或 Promise 对象，async 函数的 await 后面可以是Promise 也可以是原始类型的值
+4、返回值是 Promise
+async 函数返回的是 Promise 对象，比 Generator 函数返回的 Iterator 对象 方便，可以直</p> <p>跟 普 通</p> <p>接使用 then() 方法进行调用
+generator 函数就是一个封装的异步任务，也就是异步任务的容器，执行 Generator 函数会返 回一个遍历器对象,async 函数的实现，就是将 Generator 函数和自动执行器，包装在一个函 数里</p> <h2 id="_18、手写一个-promise-高薪常问"><a href="#_18、手写一个-promise-高薪常问" class="header-anchor">#</a> 18、手写一个 Promise(高薪常问)</h2> <p>var = new Promise((resolve, reject) =&gt; { if ( ) {</p> <p>} else {</p> <p>reject(error)</p> <p>} })</p> <p>//</p> <p>![page116image79561536](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image011.png)![page116image79562784](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)</p> <p>操作成功</p> <p>![page116image79562576](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image012.png)</p> <p>resolve(value)</p> <p>![page116image79562160](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image013.png)</p> <p>Promise.then(function</p> <p>![page116image79561744](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image014.png)</p> <p>}, })</p> <p>(value) { // failure</p> <p>Promise</p> <p>success</p> <p>(value) {</p> <p>![page116image79564240](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image015.png)</p> <p>function</p> <p>如果是要自己模拟一个 function MyPromise(fn){</p> <p>this.callBackFnArr = []; // 2. 用来装 then 里的回调函数 const resolve = (value) =&gt; {</p> <p>setTimeout(() =&gt; { // 6. 在这里改装, 确保在 then 调用后, 再执行这里 this.callBackFnArr.map(v =&gt; v(value)); // 5. 遍历数组里 then 里的回调函数</p> <p>执行(注意代码执行顺序, 这时候 pro.then()还没执行呢) });</p> <p>}</p> <p>fn(resolve); }</p> <p>MyPromise.prototype.then = function(thenFn){ // 1. 定义 then 方法, 把 then 里要执行的函数加入 到数组中</p> <p>this.callBackFnArr.push(thenFn); }</p> <p>let pro = new MyPromise(resolve =&gt; { // 3. 这里的回调函数马上执行 resolve(123); // 4. 调用 4 行内部 resolve 触发</p> <p>});
+pro.then(result =&gt; { // ? 此时还没有添加 then 函数, 上面就走完了</p> <p>console.log(result); })</p> <h2 id="_19、promise-如何封装一个-ajax-高薪常问"><a href="#_19、promise-如何封装一个-ajax-高薪常问" class="header-anchor">#</a> 19、Promise 如何封装一个 Ajax(高薪常问)</h2> <h2 id="_20、下面的输出结果是多少-高薪常问"><a href="#_20、下面的输出结果是多少-高薪常问" class="header-anchor">#</a> 20、下面的输出结果是多少(高薪常问)</h2> <p>const ![page117image79563824](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image016.png)![page117image79560912](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.png)= new Promise((resolve, reject) =&gt; {</p> <p>})
+=&gt; {</p> <p>})</p> <p>console.log(888);</p> <p>解析:Promise 新建后立即执行，所以会先输出 2，333，而 Promise.then()内部的代码在 当 次 事件循环的 结尾 立刻执行 ，所以会继续输出 888，最后输出 666</p> <p>![page117image79560704](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image018.jpg)![page117image79563200](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image019.jpg)</p> <p>Promise</p> <p>console.log(2);</p> <p>![page117image79563408](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image020.png)</p> <p>resolve();</p> <p>![page117image79562992](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image021.png)</p> <p>console.log(333);</p> <p>![page117image79592064](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image022.png)</p> <p>Promise.then(()</p> <p>![page117image79591440](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image021.png)</p> <p>console.log(666);</p> <h2 id="_21、以下代码依次输出的内容是-高薪常问"><a href="#_21、以下代码依次输出的内容是-高薪常问" class="header-anchor">#</a> 21、以下代码依次输出的内容是(高薪常问)</h2> <p>() {</p> <p>}, 0);
+new {</p> <p>for (var i = 0; i &lt; 10000; i++) { i == 9999 &amp;&amp; resolve();</p> <p>}
+() {</p> <p>});</p> <p>console.log(5);</p> <p>解析:首先先碰到一个 setTimeout，于是会先设置一个定时，在定时结束后将传递这个函数 放到任务队列里面，因此开始肯定不会输出 1 。
+然后是一个 Promise，里面的函数是直接执行的，因此应该直接输出 2 3 。
+然后，Promise 的 then 应当会放到当前 tick 的最后，但是还是在当前 tick 中。 因此，应当先输出 5，然后再输出 4 ， 最后在到下一个 tick，就是 1 。</p> <h2 id="_22、分析下列程序代码-得出运行结果-解释其原因-高薪常问"><a href="#_22、分析下列程序代码-得出运行结果-解释其原因-高薪常问" class="header-anchor">#</a> 22、分析下列程序代码，得出运行结果，解释其原因(高薪常问)</h2> <p>const ![page118image79630608](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image023.png)![page118image79631232](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.png)= new Promise((resolve, reject) =&gt; {</p> <p>})
+=&gt; {</p> <p>})
+243</p> <p>解析:Promise 构造函数是同步执行的，Promise.then 中的函数是异步执行的。</p> <h2 id="_23、分析下列程序代码-得出运行结果-解释其原因-高薪常问"><a href="#_23、分析下列程序代码-得出运行结果-解释其原因-高薪常问" class="header-anchor">#</a> 23、分析下列程序代码，得出运行结果，解释其原因(高薪常问)</h2> <p>const ![page118image79631024](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image024.png)![page118image79630816](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.png)= new ![page118image79632064](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image025.png)reject) =&gt; {</p> <p>![page118image79632272](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image026.png)</p> <p>setTimeout(function</p> <p>![page118image79632480](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image023.png)</p> <p>console.log(1)</p> <p>![page118image79632688](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image021.png)![page118image79632896](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image027.png)</p> <p>Promise(function</p> <p>executor(resolve)</p> <p>![page118image79633104](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image016.png)</p> <p>console.log(2);</p> <p>![page118image79633520](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image016.png)</p> <p>console.log(3);</p> <p>![page118image79633728](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image028.png)</p> <p>}).then(function</p> <p>![page118image79633936](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image016.png)</p> <p>console.log(4);</p> <p>Promise</p> <table><thead><tr><th>console.log(4)</th></tr></thead> <tbody><tr><td>运行结果:1</td></tr></tbody></table> <p>})</p> <p>})</p> <p>=&gt; {
+', res)</p> <p>console.log(1)</p> <p>![page118image79634976](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image029.png)</p> <p>resolve()</p> <p>![page118image79635184](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image023.png)</p> <p>console.log(2)</p> <p>![page118image79635392](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image022.png)</p> <p>Promise.then(()</p> <p>![page118image79635600](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image023.png)</p> <p>console.log(3)</p> <p>Promise</p> <p>resolve('success2')</p> <p>Promise((resolve,</p> <p>resolve('success1')</p> <p>![page118image79635808](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image030.png)</p> <p>reject('error')</p> <p>![page118image79636016](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image024.png)![page118image79636224](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.png)</p> <p>Promise</p> <p>![page118image79636432](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image031.png)</p> <p>.then((res)</p> <p>![page118image79636640](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image032.png)</p> <p>console.log('then:</p> <p>![page119image79626864](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image033.png)</p> <p>=&gt; {
+', err)</p> <p>})
+运行结果:then: success1
+解析:构造函数中的 resolve 或 reject 只有第一次执行有效，多次调用没有任何作用，呼 应代码二结论:Promise 状态一旦改变则不能再变。</p> <h2 id="_24、使用结构赋值-实现两个变量的值的交换-高薪常问"><a href="#_24、使用结构赋值-实现两个变量的值的交换-高薪常问" class="header-anchor">#</a> 24、使用结构赋值，实现两个变量的值的交换(高薪常问)</h2> <p>let a = 1;
+let b = 2; [a,b] = [b,a];</p> <h2 id="_25、说一下-es6-的导入导出模块-高薪常问"><a href="#_25、说一下-es6-的导入导出模块-高薪常问" class="header-anchor">#</a> 25、说一下 ES6 的导入导出模块(高薪常问)</h2> <p>导入模块
+通过 import 关键字
+// 只导入一个
+import {sum} from &quot;./example.js&quot;
+// 导入多个
+import {sum,multiply,time} from &quot;./exportExample.js&quot; // 导入一整个模块
+import * as example from &quot;./exportExample.js&quot;</p> <p>导出模块
+导出通过 export 关键字
+//可以将 export 放在任何变量,函数或类声明的前面
+export var = 'Chen';
+export var = 'Sunny';
+export var year = 1998; //也可以使用大括号指定所要输出的一组变量
+var = 'Chen';
+var = 'Sunny';
+var year = 1998;
+export year};
+//使用 export default 时，对应的 import 语句不需要使用大括号 let bosh = function crs(){}
+export default bosh;
+import crc from 'crc';
+//不使用 export default 时，对应的 import 语句需要使用大括号 let bosh = function crs(){}
+export bosh;
+import {crc} from 'crc';</p> <p>.catch((err)</p> <p>![page119image79631648](file:////Users/suxingxing/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image034.png)</p> <p>console.log('catch:</p> <table><thead><tr><th>firstName</th></tr></thead> <tbody><tr><td>lastName</td></tr></tbody></table> <table><thead><tr><th>firstName</th></tr></thead> <tbody><tr><td>lastName</td></tr></tbody></table> <table><thead><tr><th>{firstName,</th> <th>lastName,</th></tr></thead> <tbody><tr><td></td> <td></td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.799c955b.js" defer></script><script src="/assets/js/2.b8e5fd1e.js" defer></script><script src="/assets/js/16.f8c70433.js" defer></script>
+  </body>
+</html>

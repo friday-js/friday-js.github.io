@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React | 小苏同学</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="./logo.jpg">
+    <meta name="description" content="前端程序员一枚">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d920bc0.css" as="style"><link rel="preload" href="/assets/js/app.799c955b.js" as="script"><link rel="preload" href="/assets/js/2.b8e5fd1e.js" as="script"><link rel="preload" href="/assets/js/59.3b111ed5.js" as="script"><link rel="prefetch" href="/assets/js/10.173ba4a3.js"><link rel="prefetch" href="/assets/js/11.b0fcce45.js"><link rel="prefetch" href="/assets/js/12.1e75d2a0.js"><link rel="prefetch" href="/assets/js/13.20685699.js"><link rel="prefetch" href="/assets/js/14.2050ba9c.js"><link rel="prefetch" href="/assets/js/15.7ee8934e.js"><link rel="prefetch" href="/assets/js/16.f8c70433.js"><link rel="prefetch" href="/assets/js/17.f5f5445e.js"><link rel="prefetch" href="/assets/js/18.73a967f8.js"><link rel="prefetch" href="/assets/js/19.35743663.js"><link rel="prefetch" href="/assets/js/20.478b4be4.js"><link rel="prefetch" href="/assets/js/21.6109c918.js"><link rel="prefetch" href="/assets/js/22.de8afd3d.js"><link rel="prefetch" href="/assets/js/23.42e7ed51.js"><link rel="prefetch" href="/assets/js/24.e137eab3.js"><link rel="prefetch" href="/assets/js/25.617166c9.js"><link rel="prefetch" href="/assets/js/26.d1be1525.js"><link rel="prefetch" href="/assets/js/27.f843caff.js"><link rel="prefetch" href="/assets/js/28.02b3c64a.js"><link rel="prefetch" href="/assets/js/29.d1a6e48d.js"><link rel="prefetch" href="/assets/js/3.154f35b1.js"><link rel="prefetch" href="/assets/js/30.1a135e89.js"><link rel="prefetch" href="/assets/js/31.b1d91383.js"><link rel="prefetch" href="/assets/js/32.af62797f.js"><link rel="prefetch" href="/assets/js/33.72780d8e.js"><link rel="prefetch" href="/assets/js/34.d7f129f4.js"><link rel="prefetch" href="/assets/js/35.ee8cfdb9.js"><link rel="prefetch" href="/assets/js/36.8e449d62.js"><link rel="prefetch" href="/assets/js/37.e8a4f0e5.js"><link rel="prefetch" href="/assets/js/38.3f741454.js"><link rel="prefetch" href="/assets/js/39.e0f18441.js"><link rel="prefetch" href="/assets/js/4.f0f72fd4.js"><link rel="prefetch" href="/assets/js/40.fd9c914d.js"><link rel="prefetch" href="/assets/js/41.85e9036d.js"><link rel="prefetch" href="/assets/js/42.19852b80.js"><link rel="prefetch" href="/assets/js/43.bb830d8d.js"><link rel="prefetch" href="/assets/js/44.80cba45e.js"><link rel="prefetch" href="/assets/js/45.14fbd65d.js"><link rel="prefetch" href="/assets/js/46.9f520699.js"><link rel="prefetch" href="/assets/js/47.a099417c.js"><link rel="prefetch" href="/assets/js/48.107921c4.js"><link rel="prefetch" href="/assets/js/49.e9f5ca18.js"><link rel="prefetch" href="/assets/js/5.cec6138f.js"><link rel="prefetch" href="/assets/js/50.267bc72a.js"><link rel="prefetch" href="/assets/js/51.481dca6b.js"><link rel="prefetch" href="/assets/js/52.4af43417.js"><link rel="prefetch" href="/assets/js/53.ad1dca16.js"><link rel="prefetch" href="/assets/js/54.7d44d111.js"><link rel="prefetch" href="/assets/js/55.4b637917.js"><link rel="prefetch" href="/assets/js/56.2e70385a.js"><link rel="prefetch" href="/assets/js/57.64271518.js"><link rel="prefetch" href="/assets/js/58.444ba637.js"><link rel="prefetch" href="/assets/js/6.a72b95d8.js"><link rel="prefetch" href="/assets/js/60.2403610f.js"><link rel="prefetch" href="/assets/js/61.99162c33.js"><link rel="prefetch" href="/assets/js/62.1f6c3fcd.js"><link rel="prefetch" href="/assets/js/63.986ad790.js"><link rel="prefetch" href="/assets/js/64.476d077e.js"><link rel="prefetch" href="/assets/js/65.290fc1ef.js"><link rel="prefetch" href="/assets/js/66.1436f5dd.js"><link rel="prefetch" href="/assets/js/67.033d993e.js"><link rel="prefetch" href="/assets/js/68.30869f66.js"><link rel="prefetch" href="/assets/js/69.e55e549d.js"><link rel="prefetch" href="/assets/js/7.8d321e7d.js"><link rel="prefetch" href="/assets/js/70.4c1c02fc.js"><link rel="prefetch" href="/assets/js/71.0ba0dc54.js"><link rel="prefetch" href="/assets/js/72.628926bf.js"><link rel="prefetch" href="/assets/js/73.03da4157.js"><link rel="prefetch" href="/assets/js/8.65eb0d86.js"><link rel="prefetch" href="/assets/js/9.509a395f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d920bc0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小苏同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  扩展
+</a></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  工具箱
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端笔记" class="dropdown-title"><span class="title">前端笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端笔记" class="mobile-dropdown-title"><span class="title">前端笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML&amp;CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/html/基础知识.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/css/基础知识.html" class="nav-link">
+  CSS
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ECMAScript/JavaScript起步.html" class="nav-link">
+  ECMAScript
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/WebAPI/DOM.html" class="nav-link">
+  WebAPI
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/javascript/ES6/ES6.html" class="nav-link">
+  ES6
+</a></li></ul></li><li class="dropdown-item"><h4>
+          前端框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/react/react.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  React
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/angular/angular.html" class="nav-link">
+  Angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/nodes/node/node.html" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/git/git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/guide/nodes/typescript/typescript.html" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/java/" class="nav-link">
+  后端笔记
+</a></div><div class="nav-item"><a href="/guide/sql/基础.html" class="nav-link">
+  SQL笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端宝典
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/interview/h5c3/H5C3.html" class="nav-link">
+  H5C3
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/javascript/javascript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/es6/es6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/jquery/jquery.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/git/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/node/node.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/webpack/webpack.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/vue/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/guide/interview/react/react.html" class="nav-link">
+  React
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  扩展
+</a></div><div class="nav-item"><a href="/guide/extend.html" class="nav-link">
+  工具箱
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/nodes/react/react.html" aria-current="page" class="active sidebar-link">React</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_1-react相关介绍" class="sidebar-link">1. React相关介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_1-react特点" class="sidebar-link">1. React特点</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_2-环境搭建" class="sidebar-link">2. 环境搭建</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_2-组件化开发" class="sidebar-link">2. 组件化开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#定义组件" class="sidebar-link">定义组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#引入组件" class="sidebar-link">引入组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#注意" class="sidebar-link">注意：</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_3-jsx语法糖" class="sidebar-link">3. jsx语法糖</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#a-jsx的特点" class="sidebar-link">a.  JSX的特点</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#b-jsx几个注意的格式" class="sidebar-link">b. JSX几个注意的格式</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#c-jsx-和-html-区别" class="sidebar-link">c. jsx 和 html 区别</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#d-文件引入方式" class="sidebar-link">d. 文件引入方式</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#e-jsx是react虚拟出来的dom对象" class="sidebar-link">e. JSX是React虚拟出来的DOM对象</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_4-类式组件" class="sidebar-link">4. 类式组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#a-插值语法" class="sidebar-link">a. 插值语法</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#b-事件的三种写法" class="sidebar-link">b. 事件的三种写法</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#c-双向数据绑定" class="sidebar-link">c. 双向数据绑定</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#d-循环" class="sidebar-link">d. 循环</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#e-数组操作" class="sidebar-link">e. 数组操作</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#f-父子传值" class="sidebar-link">f. 父子传值</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#g-组件跨级值传递context" class="sidebar-link">g. 组件跨级值传递Context</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#h-组件的生命周期" class="sidebar-link">h. 组件的生命周期</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_5-函数式组件" class="sidebar-link">5. 函数式组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#usestate-响应式数据" class="sidebar-link">useState 响应式数据</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#父子组件传值" class="sidebar-link">父子组件传值</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#hook-多级组件传值" class="sidebar-link">Hook 多级组件传值</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#hook模拟生命周期" class="sidebar-link">Hook模拟生命周期</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#hook获取dom元素" class="sidebar-link">Hook获取DOM元素</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#hook-计算属性" class="sidebar-link">Hook 计算属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_6-路由" class="sidebar-link">6. 路由</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#路由切换原理" class="sidebar-link">路由切换原理</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#安装路由" class="sidebar-link">安装路由</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#子路由" class="sidebar-link">子路由</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#路由跳转" class="sidebar-link">路由跳转</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#路由传参" class="sidebar-link">路由传参</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#_7-redux状态管理" class="sidebar-link">7. Redux状态管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/react/react.html#使用redux" class="sidebar-link">使用redux</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react"><a href="#react" class="header-anchor">#</a> React</h1> <h2 id="_1-react相关介绍"><a href="#_1-react相关介绍" class="header-anchor">#</a> 1. React相关介绍</h2> <h3 id="_1-react特点"><a href="#_1-react特点" class="header-anchor">#</a> 1. React特点</h3> <h4 id="a-声明式设计"><a href="#a-声明式设计" class="header-anchor">#</a> A. 声明式设计</h4> <p>react是面向数据编程，不需要直接去控制dom，你只要把数据操作好，react自己会去帮你操作dom，可以节省很多操作dom的代码。这就是声明式开发。</p> <h4 id="b-jsx语法"><a href="#b-jsx语法" class="header-anchor">#</a> B. JSX语法</h4> <p>JSX 是 JavaScript 语法的扩展。React 开发大部分使用 JSX 语法（在JSX中可以将HTML于JS混写）。</p> <h4 id="c-灵活"><a href="#c-灵活" class="header-anchor">#</a> C. 灵活</h4> <p>react所控制的dom就是id为root的dom，页面上的其他dom元素你页可以使用jq等其他框架 。可以和其他库并存。</p> <h4 id="d-使用虚拟dom、高效"><a href="#d-使用虚拟dom、高效" class="header-anchor">#</a> D. 使用虚拟DOM、高效</h4> <p>虚拟DOM其实本质就是一个JavaScript对象，当数据和状态发生了变化，都会被自动高效的同步到虚拟DOM中，最后再将仅变化的部分同步到DOM中（不需要整个DOM树重新渲染）</p> <h4 id="e-组件化开发"><a href="#e-组件化开发" class="header-anchor">#</a> E. 组件化开发</h4> <p>通过 React 构建组件，使得代码更加容易得到复用和维护，能够很好的应用在大项目的开发中。</p> <h4 id="f-单向数据流"><a href="#f-单向数据流" class="header-anchor">#</a> F. 单向数据流</h4> <p>react是单向数据流，父组件传递给子组件的数据，子组件能够使用，但是不能直接通过this.props修改。 这样让数据清晰代码容易维护。</p> <h3 id="_2-环境搭建"><a href="#_2-环境搭建" class="header-anchor">#</a> 2. 环境搭建</h3> <h4 id="a-全局安装脚手架-不推荐"><a href="#a-全局安装脚手架-不推荐" class="header-anchor">#</a> A .  全局安装脚手架（不推荐）</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> create-react-app <span class="token parameter variable">-g</span>
+</code></pre></div><h4 id="b-通过npx搭建项目-官方推荐"><a href="#b-通过npx搭建项目-官方推荐" class="header-anchor">#</a> B. 通过npx搭建项目（官方推荐）</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>npx create-react-app 项目名
+</code></pre></div><blockquote><h5 id="关于create-react-app"><a href="#关于create-react-app" class="header-anchor">#</a> 关于create-react-app</h5> <p><code>create-react-app</code> 是FaceBook的React团队官方出的一个构建React单页面应用的脚手架工具，它本身集成了 <code>webpack</code> ，并配置了一系列内置的 <code>loader</code> 和默认的npm脚本，可以很轻松的实现零配置就可以快速开发React的应用</p> <h5 id="关于npx"><a href="#关于npx" class="header-anchor">#</a> 关于npx</h5> <p>在 npm 的5.2.0版本开始，自动安装了npx</p> <p>npx是什么？ npx会帮助你执行依赖包里的二进制文件</p> <p>npx会自动查找当前依赖包中的可执行文件，如果找不到，就会去PATH里找。如果依然找不到，就会帮你安装</p> <p>该命令建议运行在node的12.13.0版本的基础上</p></blockquote> <h4 id="c-清除项目中的默认文件"><a href="#c-清除项目中的默认文件" class="header-anchor">#</a> C. 清除项目中的默认文件</h4> <p>删除掉新项目中 <code>src/</code> 文件夹下的所有文件</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 1.进入到src目录下</span>
+<span class="token builtin class-name">cd</span> 项目名/src
+
+<span class="token comment"># 2.删除src目录下的所有文件</span>
+<span class="token comment"># 如果你使用 Mac 或 Linux:</span>
+<span class="token function">rm</span> <span class="token parameter variable">-f</span> *
+<span class="token comment"># 如果你使用 Windows:</span>
+del *
+
+<span class="token comment"># 3.新建一个index.js文件</span>
+<span class="token function">touch</span> index.js
+
+<span class="token comment"># 4.然后回到项目文件夹</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+
+<span class="token comment"># 5.复制一下代码到index.js</span>
+<span class="token function">import</span> React from <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token function">import</span> ReactDOM from <span class="token string">'react-dom/client'</span><span class="token punctuation">;</span>
+<span class="token function">import</span> App from <span class="token string">&quot;./App&quot;</span>
+const root <span class="token operator">=</span> ReactDOM.createRoot<span class="token punctuation">(</span>document.getElementById<span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+root.render<span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>App /<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 6.运行项目</span>
+<span class="token function">npm</span> start
+</code></pre></div><h4 id="d-书写第一个组件"><a href="#d-书写第一个组件" class="header-anchor">#</a> D. 书写第一个组件</h4> <div class="language-react extra-class"><pre class="language-text"><code>import React from 'react'
+
+class App extends React.Component{
+  render(){
+    return (
+    	&lt;div&gt;我的第一个组件&lt;/div&gt;
+    )
+  }
+}
+
+export default App
+</code></pre></div><h4 id="e-vscode中jsx的编写优化"><a href="#e-vscode中jsx的编写优化" class="header-anchor">#</a> E. VSCode中JSX的编写优化</h4> <h2 id="_2-组件化开发"><a href="#_2-组件化开发" class="header-anchor">#</a> 2. 组件化开发</h2> <h3 id="定义组件"><a href="#定义组件" class="header-anchor">#</a> 定义组件</h3> <p>定义组件分为3步：</p> <ol><li><p>导入React核心模块</p></li> <li><p>定义组件类</p></li> <li><p>导出组件</p></li></ol> <p>在src目录下新建App.js文件：</p> <div class="language-react extra-class"><pre class="language-text"><code>//1、导入React核心模块
+import React from 'react'
+
+//2、定义组件类
+class Hello extends React.Component{   //类
+    render(){     //函数
+        return (   //返回值
+            &lt;div&gt;
+                hello world !!! 我是组件
+            &lt;/div&gt;
+        )
+    }
+}
+
+//3、导出组件
+export default Hello
+
+/*
+	为什么继承Component？
+		因为继承Component，组件里就可以写render，return(标签)，然后React就会帮助渲染成浏览器认识的标签
+*/
+</code></pre></div><h3 id="引入组件"><a href="#引入组件" class="header-anchor">#</a> 引入组件</h3> <p>在需要引入该组件的index.js中，导入，就可以直接使用这个组件了：</p> <div class="language-react extra-class"><pre class="language-text"><code>//import 组件名 from '文件路径'
+
+//1、导入Hello组件 (首字母必须大写)
+import Hello from './App' 
+
+ReactDOM.render(
+// 2、使用Hello组件 (首字母必须大写) 
+&lt;Hello /&gt; 
+, document.getElementById('root'));
+
+//注意：Hello是组件名，在使用的时候就应该写JSX标签写法，而不能直接写Hello
+</code></pre></div><h3 id="注意"><a href="#注意" class="header-anchor">#</a> 注意：</h3> <ol><li><p>定义组件的时候，return 后面<strong>只能有一个根标签</strong>，不能有多个，但这个标签内部可以有其他多个标签</p></li> <li><p>使用组件的时候，<strong>首字母必须大写</strong>，（是为了和标签进行区分，标签是小写）</p></li> <li><p>如果最外层实在不想放置一层div根目录，可以使用 <strong><code>&lt;&gt;&lt;/&gt;</code></strong> 空标签代替</p></li> <li><p>写jsx要套在 <code>return ()</code> 里，写js语法要套在 <code>{}</code> 里</p></li></ol> <h2 id="_3-jsx语法糖"><a href="#_3-jsx语法糖" class="header-anchor">#</a> 3. jsx语法糖</h2> <p>React使用JSX来替代常规的javascript。jsx是一个看起来很像XML的JavaScript语法扩展，在React中会被babel编译为JavaScript。</p> <blockquote><p>语法糖：一个功能，有两种完成方式，其中简单的写法。叫语法糖</p> <p>Babel 是一个 JavaScript 编译器</p></blockquote> <h3 id="a-jsx的特点"><a href="#a-jsx的特点" class="header-anchor">#</a> a.  JSX的特点</h3> <div class="language- extra-class"><pre class="language-text"><code>1. jsx执行更快，因为它在编译为JavaScript代码后进行了优化
+2. 它是类型安全的，在编译过程中就能发现错误
+3. 使用jsx编写模版更加简单快速
+</code></pre></div><h3 id="b-jsx几个注意的格式"><a href="#b-jsx几个注意的格式" class="header-anchor">#</a> b. JSX几个注意的格式</h3> <ol><li>React的JSX是使用大写和小写字母来区分本地组件和HTML标签</li> <li>JSX和HTML的标签属性的区别</li></ol> <table><thead><tr><th>HTML标签属性</th> <th>JSX</th> <th>原因</th></tr></thead> <tbody><tr><td>for</td> <td>htmlFor</td> <td>for在js中为for循环的关键字</td></tr> <tr><td>class</td> <td>className</td> <td>class在js中为声明类关键字</td></tr> <tr><td>style</td> <td>需使用JS对象（使用双花括号--{{}} ）</td> <td></td></tr></tbody></table> <h3 id="c-jsx-和-html-区别"><a href="#c-jsx-和-html-区别" class="header-anchor">#</a> c. jsx 和 html 区别</h3> <ol><li>行内样式 必须是一个对象 第一个{}代表js环境 第二个 {} 代表 对象格式</li></ol> <div class="language-react extra-class"><pre class="language-text"><code>&lt;div style=&quot;{{width:&quot;200px&quot;}}&quot;&gt;&lt;/div&gt;
+</code></pre></div><ol start="2"><li><p>jsx中不要使用class，用className代替</p></li> <li><p>在jsx中使用js代码，必须要写在{}</p></li> <li><p>jsx 本地图片先引入 后使用</p></li> <li><p>其他的，都可以当做HTML语法来用</p></li></ol> <h3 id="d-文件引入方式"><a href="#d-文件引入方式" class="header-anchor">#</a> d. 文件引入方式</h3> <div class="language-react extra-class"><pre class="language-text"><code>//引入后立即执行
+import &quot;./Index.css&quot;
+
+//什么时候调用什么时候执行
+import Img from &quot;../static/logo.png&quot;
+</code></pre></div><h3 id="e-jsx是react虚拟出来的dom对象"><a href="#e-jsx是react虚拟出来的dom对象" class="header-anchor">#</a> e. JSX是React虚拟出来的DOM对象</h3> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// js创建DOM元素</span>
+document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// React的标签对象</span>
+React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">className</span><span class="token operator">:</span><span class="token string">&quot;box&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="_4-类式组件"><a href="#_4-类式组件" class="header-anchor">#</a> 4. 类式组件</h2> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+  <span class="token comment">// constructor 专门用来初始化</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token punctuation">{</span>   
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token comment">// 定义组件内部数据</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">num</span><span class="token operator">:</span><span class="token number">20</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token punctuation">{</span><span class="token comment">/* 在JSX上获取组件内部数据 需要通过 this.state.变量名 */</span><span class="token punctuation">}</span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>num<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">按钮</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 需要修改到组件内部数据，需要用到this.setState方法来修改</span>
+    <span class="token comment">// 在函数中，如果需要使用this，就得在调用的时候传递this</span>
+    <span class="token comment">// this.setState() 这个方法是异步的</span>
+    <span class="token comment">// this.setState() 提供的第二个参数是一个回调函数，修改了数据之后才执行</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">num</span><span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>num<span class="token operator">+</span><span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+      <span class="token comment">// 修改数据之后才执行</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>num<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><h5 id="super的作用究竟是什么"><a href="#super的作用究竟是什么" class="header-anchor">#</a> super的作用究竟是什么？</h5> <p>super关键字，它指代父类的实例（即父类的this对象）。子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。</p> <h5 id="super-加与不加props的区别究竟在哪里呢"><a href="#super-加与不加props的区别究竟在哪里呢" class="header-anchor">#</a> super()加与不加props的区别究竟在哪里呢？</h5> <p>这是因为 react 在初始化 class 后，会将 props 自动设置到 this 中，所以在任何地方都可以直接访问 this.props，除了一个地方：<code>constructor</code> ；所以如果你需要在构造函数内使用this.props，就需要传递props作为super()的参数。</p></blockquote> <h3 id="a-插值语法"><a href="#a-插值语法" class="header-anchor">#</a> a. 插值语法</h3> <div class="language-react extra-class"><pre class="language-text"><code>import React, { Component } from &quot;react&quot;;
+
+export default class App3 extends Component {
+  state = {
+    name: &quot;苏东旭&quot;,
+    num: 10,
+  };
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;{this.state.name}&lt;/p&gt;
+        &lt;p&gt;{this.state.num}&lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre></div><h3 id="b-事件的三种写法"><a href="#b-事件的三种写法" class="header-anchor">#</a> b. 事件的三种写法</h3> <p><code>this.事件名.bind(this,传递的参数)</code></p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">&quot;我是标题&quot;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      	&lt;button onClick = </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">&gt;按钮1</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      	&lt;button onClick = </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleClick<span class="token punctuation">}</span><span class="token plain-text">&gt;按钮2</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      	&lt;button onClick = </span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">&gt;按钮3</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">&quot;修改后的标题&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="c-双向数据绑定"><a href="#c-双向数据绑定" class="header-anchor">#</a> c. 双向数据绑定</h3> <p>react不会问react双向绑定原理的，没有双向绑定</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">val</span><span class="token operator">:</span> <span class="token string">&quot;默认值&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">inp</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">val</span><span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+          <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span>
+          <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>val<span class="token punctuation">}</span></span>
+          <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">inp</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>val<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="d-循环"><a href="#d-循环" class="header-anchor">#</a> d. 循环</h3> <p>react只支持map遍历</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">arr</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'html'</span><span class="token punctuation">,</span><span class="token string">'css'</span><span class="token punctuation">,</span><span class="token string">'js'</span><span class="token punctuation">,</span><span class="token string">'jq'</span><span class="token punctuation">,</span><span class="token string">'node'</span><span class="token punctuation">,</span><span class="token string">'ts'</span><span class="token punctuation">,</span><span class="token string">'vue'</span><span class="token punctuation">,</span><span class="token string">'react'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      		</span><span class="token punctuation">{</span>
+          	<span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span>index</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token punctuation">(</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+              <span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        	<span class="token punctuation">}</span><span class="token plain-text">
+      	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="e-数组操作"><a href="#e-数组操作" class="header-anchor">#</a> e. 数组操作</h3> <ol><li>普通写法</li></ol> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">arr</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;jq&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">添加</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token comment">// 浅拷贝</span>
+      <span class="token literal-property property">arr</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>arr<span class="token punctuation">,</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>深拷贝写法</li></ol> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">arr</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;jq&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">handleClick</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">添加</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+          </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">key</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 深拷贝</span>
+    <span class="token keyword">let</span> newArr <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    newArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&quot;react&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">arr</span><span class="token operator">:</span> newArr<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="f-父子传值"><a href="#f-父子传值" class="header-anchor">#</a> f. 父子传值</h3> <h4 id="_1-父传子"><a href="#_1-父传子" class="header-anchor">#</a> 1. 父传子</h4> <blockquote><p>在父组件的子组件标签中设置自定义属性，并将要传递的数据作为其属性值</p> <p>在子组件中直接通过 <code>this.props.自定义属性</code> 获取父组件传递的数据</p></blockquote> <h5 id="父组件传值"><a href="#父组件传值" class="header-anchor">#</a> 父组件传值</h5> <ol><li><p>在父组件中引入子组件</p> <div class="language-react extra-class"><pre class="language-text"><code>// 组件名首字母一定大写
+import 子组件名 from &quot;子组件位置&quot;
+</code></pre></div></li> <li><p>直接用就行，无需注册</p> <div class="language- extra-class"><pre class="language-text"><code>render(){
+	return(
+		&lt;div&gt;
+			&lt;子组件 自定义属性={父组件数据}&gt;&lt;/子组件&gt;
+		&lt;/div&gt;
+	)
+}
+</code></pre></div></li></ol> <h5 id="子组件接值"><a href="#子组件接值" class="header-anchor">#</a> 子组件接值</h5> <div class="language-react extra-class"><pre class="language-text"><code>&lt;p&gt;{this.props.自定义属性名}&lt;/p&gt;
+</code></pre></div><ol><li><p>子组件中限制默认值</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">static</span> defaultProps <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">自定义属性名</span><span class="token operator">:</span><span class="token string">&quot;属性值&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">&quot;默认值&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>子组件中限制类型</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// 引入限制类型的模块</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">&quot;prop-types&quot;</span>
+
+<span class="token comment">// 限制类型 注意不能直接写类型，需要单独引入 限制类型 的模块</span>
+<span class="token keyword">static</span> propTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">自定义属性名</span><span class="token operator">:</span>PropTypes<span class="token punctuation">.</span>String
+<span class="token punctuation">}</span>
+</code></pre></div></li></ol> <h4 id="_2-子传父"><a href="#_2-子传父" class="header-anchor">#</a> 2. 子传父</h4> <h5 id="子组件传值"><a href="#子组件传值" class="header-anchor">#</a> 子组件传值</h5> <blockquote><p>在子组件中为某元素添加点击事件，并将事件触发的方法进行声明，在方法内通过 <code>this.props.自定义事件(传递数据)</code></p> <p>在父组件的子组件标签中使用该自定义事件，不加on，自定义事件触发的方法在父组件中进行声明，方法的形参就是子组件传递过来的数据</p></blockquote> <ol><li><p>需要一个契机，为元素添加点击事件</p> <div class="language-react extra-class"><pre class="language-text"><code>&lt;button onClick={this.子组件方法.bind(this)}&gt;子组件按钮&lt;/button&gt;
+</code></pre></div></li> <li><p>声明点击事件的方法，并通过 <code>this.props.自定义事件(传参)</code></p> <div class="language-react extra-class"><pre class="language-text"><code>子组件方法(v){
+  this.props.自定义事件(&quot;传递的数据&quot;)
+}
+</code></pre></div></li></ol> <h5 id="父组件接值"><a href="#父组件接值" class="header-anchor">#</a> 父组件接值</h5> <ol><li><p>子组件标签内，使用自定事件，不加on</p> <div class="language-react extra-class"><pre class="language-text"><code>&lt;子组件 自定义事件={this.父组件方法.bind(this)}&gt;&lt;/子组件&gt;
+</code></pre></div></li> <li><p>父组件中声明子组件自定义事件触发的方法</p> <div class="language-react extra-class"><pre class="language-text"><code>父组件方法(v){
+  //形参v就是子组件传递的数据
+}
+</code></pre></div></li></ol> <h3 id="g-组件跨级值传递context"><a href="#g-组件跨级值传递context" class="header-anchor">#</a> g. 组件跨级值传递Context</h3> <p>React组件之间的通信是基于props的数据传递，数据需要一级一级从上到下传递。如果组件级别过多传递就会过于麻烦。React中 <code>Context</code> 配置可以解决组件跨级值通信</p> <p>适合获取数据，如果修改的话，还是建议放在redux中</p> <h4 id="方式一"><a href="#方式一" class="header-anchor">#</a> 方式一</h4> <h5 id="向下传递"><a href="#向下传递" class="header-anchor">#</a> 向下传递</h5> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span><span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">'prop-types'</span>
+<span class="token comment">// 爷爷</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Comp1</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+  <span class="token comment">// 声明要传递的数据类型</span>
+  <span class="token keyword">static</span> childContextTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">fnum</span><span class="token operator">:</span>PropTypes<span class="token punctuation">.</span>number
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 保存要传递的数据到上下文环境中</span>
+  <span class="token function">getChildContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">fnum</span><span class="token operator">:</span><span class="token number">40</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Child</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Child</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 爸爸</span>
+<span class="token keyword">class</span> <span class="token class-name">Child</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      	</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ChildChild</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ChildChild</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 孙子</span>
+<span class="token keyword">class</span> <span class="token class-name">ChildChild</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 在哪个组件中想要获取fnum这个数据，就必须写两个东西</span>
+  <span class="token comment">// 1. 接收的类型</span>
+  <span class="token keyword">static</span> contextTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">fnum</span><span class="token operator">:</span>PropTypes<span class="token punctuation">.</span>number
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      	孙子组件
+        </span><span class="token punctuation">{</span><span class="token comment">/* 2. 通过this.context.fnum获取值 */</span><span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>context<span class="token punctuation">.</span>fnum<span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="方式二"><a href="#方式二" class="header-anchor">#</a> 方式二</h4> <p>配置<code>createContext</code></p> <div class="language-react extra-class"><pre class="language-text"><code>// ctx.js 哪个组件使用就引入
+import {createContext} from &quot;react&quot;
+const ctx = createContext()
+export default ctx
+
+/*
+ctx有两个组件(标签)
+	Provider	发送数据
+	Consumer	接收数据
+*/
+</code></pre></div><h5 id="向下传递-2"><a href="#向下传递-2" class="header-anchor">#</a> 向下传递</h5> <blockquote><p>父辈通过Provider的value属性向下传递数据</p> <p>后代通过 <code>(value)=&gt;{}</code> 接收数据</p></blockquote> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ctx <span class="token keyword">from</span> <span class="token string">&quot;../utils/ctx&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span> Provider<span class="token punctuation">,</span> Consumer <span class="token punctuation">}</span> <span class="token operator">=</span> ctx<span class="token punctuation">;</span>
+<span class="token comment">// 爷爷</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Provider</span></span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;苏东旭&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Child</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Child</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Provider</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 爸爸</span>
+<span class="token keyword">class</span> <span class="token class-name">Child</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ChildChild</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ChildChild</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 孙子</span>
+<span class="token keyword">class</span> <span class="token class-name">ChildChild</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Consumer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>value<span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Consumer</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h5 id="向上传递"><a href="#向上传递" class="header-anchor">#</a> 向上传递</h5> <blockquote><p>父辈传参时传一个函数，并声明一下该函数，函数的形参就是将来后代传递过来的数据</p> <p>后代在函数的形参处传值</p></blockquote> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ctx <span class="token keyword">from</span> <span class="token string">&quot;../utils/ctx&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span> Provider<span class="token punctuation">,</span> Consumer <span class="token punctuation">}</span> <span class="token operator">=</span> ctx<span class="token punctuation">;</span>
+<span class="token comment">// 爷爷</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Provider</span></span> <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;苏东旭&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">fn</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Child</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Child</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Provider</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 爸爸</span>
+<span class="token keyword">class</span> <span class="token class-name">Child</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ChildChild</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">ChildChild</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 孙子</span>
+<span class="token keyword">class</span> <span class="token class-name">ChildChild</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Consumer</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token punctuation">(</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>value<span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+              </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>value<span class="token punctuation">.</span><span class="token function">fn</span><span class="token punctuation">(</span><span class="token string">&quot;孙子向上传递的数据&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">传递</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+          <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Consumer</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="h-组件的生命周期"><a href="#h-组件的生命周期" class="header-anchor">#</a> h. 组件的生命周期</h3> <p>类的生命周期分为三个大阶段：挂载、更新、卸载</p> <p>每个大阶段又有若干小阶段，其中在整个生命周期中render会被执行两次（挂载和更新阶段各执行一次）</p> <h4 id="挂载阶段"><a href="#挂载阶段" class="header-anchor">#</a> 挂载阶段</h4> <blockquote><h5 id="constructor-当对象刚刚类创建出来的时候"><a href="#constructor-当对象刚刚类创建出来的时候" class="header-anchor">#</a> <code>constructor</code> : 当对象刚刚类创建出来的时候</h5> <h5 id="componentwillmount-组件即将渲染【没用-现在已经废弃了】"><a href="#componentwillmount-组件即将渲染【没用-现在已经废弃了】" class="header-anchor">#</a> <code>componentWillMount</code> : 组件即将渲染【没用，现在已经废弃了】</h5> <h5 id="render-组件正在渲染"><a href="#render-组件正在渲染" class="header-anchor">#</a> <code>render</code> : 组件正在渲染</h5> <h5 id="componentdidmount-组件渲染完毕"><a href="#componentdidmount-组件渲染完毕" class="header-anchor">#</a> <code>componentDidMount</code> : 组件渲染完毕</h5></blockquote> <div class="language-react extra-class"><pre class="language-text"><code>// 当对象刚刚类创建出来的时候
+constructor(){
+  super()
+  console.log(&quot;生命周期的第一个阶段---刚刚创建出来&quot;)
+  //作用：就是为了初始化state的数据
+}
+
+// 组件即将渲染【没用，现在已经废弃了】
+UNSAFE_componentWillMount(){
+  console.log(&quot;生命周期的第二个阶段---组件即将渲染&quot;)
+}
+
+// 组件正在渲染
+render(){
+  console.log(&quot;生命周期的第三个阶段---组件正在渲染&quot;)
+}
+
+// 组件渲染完毕
+componentDidMount(){
+  // react官方要求，推荐在componentDidMount中请求数据
+  console.log(&quot;生命周期的第四个阶段---组件渲染完毕&quot;)
+}
+</code></pre></div><h4 id="更新阶段"><a href="#更新阶段" class="header-anchor">#</a> 更新阶段</h4> <blockquote><h5 id="shouldcomponentupdate-应该更新么-返回true或false"><a href="#shouldcomponentupdate-应该更新么-返回true或false" class="header-anchor">#</a> <code>shouldComponentUpdate</code> : 应该更新么，返回true或false</h5> <h5 id="componentwillupdate-即将更新【已废弃】"><a href="#componentwillupdate-即将更新【已废弃】" class="header-anchor">#</a> <code>componentWillUpdate</code> : 即将更新【已废弃】</h5> <h5 id="render-正在更新"><a href="#render-正在更新" class="header-anchor">#</a> <code>render</code> : 正在更新</h5> <h5 id="componentdidupdate-更新完毕"><a href="#componentdidupdate-更新完毕" class="header-anchor">#</a> <code>componentDidUpdate</code> : 更新完毕</h5></blockquote> <h5 id="state更新"><a href="#state更新" class="header-anchor">#</a> state更新</h5> <div class="language-react extra-class"><pre class="language-text"><code>import React, { Component } from &quot;react&quot;;
+
+export default class Child extends Component {
+  constructor() {
+    super();
+    this.state = {
+      num: 1,
+    };
+  }
+  dian() {
+    this.setState({
+      num: &quot;苏东旭&quot;,
+    });
+  }
+	// 在这个方法中，判断数据修改前后是否一致，不一致才去render，减少不必要的更新，优化更新性能
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(&quot;修改的第一阶段：可以修改么&quot;);
+    if (this.state.num === nextState.num) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  UNSAFE_componentWillUpdate() {
+    console.log(&quot;修改的第二阶段：即将修改【已废弃】&quot;);
+  }
+
+  render() {
+    console.log(&quot;修改的第三阶段：正在修改&quot;);
+    return (
+      &lt;div&gt;
+        Child
+        &lt;p&gt;{this.state.num}&lt;/p&gt;
+        &lt;button onClick={this.dian.bind(this)}&gt;按钮&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+  componentDidUpdate() {
+    console.log(&quot;修改的第四阶段：修改完毕&quot;);
+  }
+}
+
+</code></pre></div><h5 id="props改变"><a href="#props改变" class="header-anchor">#</a> props改变</h5> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token function">componentWillReceiveProps</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// props数据的变化，才会触发这个方法的执行</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="卸载阶段"><a href="#卸载阶段" class="header-anchor">#</a> 卸载阶段</h4> <blockquote><h5 id="componentwillunmount-主要用于释放数据、清空缓存"><a href="#componentwillunmount-主要用于释放数据、清空缓存" class="header-anchor">#</a> <code>componentWillUnmount</code> : 主要用于释放数据、清空缓存</h5></blockquote> <div class="language-react extra-class"><pre class="language-text"><code>componentWillUnmount() {
+  // 释放数据 清空缓存
+  console.log(&quot;被销毁了&quot;);
+}
+</code></pre></div><blockquote><h5 id="总结"><a href="#总结" class="header-anchor">#</a> 总结：</h5> <h5 id="componentdidmount-适合做数据请求"><a href="#componentdidmount-适合做数据请求" class="header-anchor">#</a> <code>componentDidMount</code> 适合做数据请求</h5> <h5 id="shouldcomponentupdate-优化更新性能"><a href="#shouldcomponentupdate-优化更新性能" class="header-anchor">#</a> <code>shouldComponentUpdate</code> 优化更新性能</h5></blockquote> <h2 id="_5-函数式组件"><a href="#_5-函数式组件" class="header-anchor">#</a> 5. 函数式组件</h2> <p>react里面组件分两种</p> <ul><li><p>类式组件</p></li> <li><p>函数式组件</p> <ul><li>没有state，但是提供了很多的hook函数，数据渲染简洁</li> <li>没有this，它指向window</li> <li>没有生命周期函数（靠 hook 模拟出来）</li> <li>写的都是js原生，数据不是响应式的</li></ul></li></ul> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// 这就是一个简单的函数式组件</span>
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Demo</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="usestate-响应式数据"><a href="#usestate-响应式数据" class="header-anchor">#</a> useState 响应式数据</h3> <blockquote><h5 id="使用"><a href="#使用" class="header-anchor">#</a> 使用：</h5> <p><code>let [变量名,修改变量的回调] = useState(默认值)</code></p> <h5 id="修改"><a href="#修改" class="header-anchor">#</a> 修改：</h5> <p><code>修改变量的回调(变量名)</code></p></blockquote> <div class="language-react extra-class"><pre class="language-text"><code>import React,{useState} from &quot;react&quot;
+
+export default function App() {
+  // 第一个数据 就是我们想要使用的组件内部数据
+  // 第二个数据 是专门用来修改第一个数据的方法名	setNum(新值) 表示把第一个数据改成新值
+  // 第三个数据 useState方法的形参就是第一个数据的初始值
+  const [num,setNum] = useState(0)
+  function hdClick(){
+    setNum(num + 1)
+  }
+  return (
+    &lt;div&gt;
+    	&lt;p&gt;{num}&lt;/p&gt;
+      &lt;button onClick={hdClick}&gt;按钮1&lt;/button&gt;
+      &lt;button onClick={() =&gt; setNum(num + 1)}&gt;按钮2&lt;/button&gt;
+    &lt;/div&gt;
+  )
+}
+</code></pre></div><h3 id="父子组件传值"><a href="#父子组件传值" class="header-anchor">#</a> 父子组件传值</h3> <h4 id="父传子"><a href="#父传子" class="header-anchor">#</a> 父传子</h4> <ol><li><p>给儿子自定义属性</p></li> <li><p>儿子在函数参数位置接取props</p></li></ol> <div class="language-react extra-class"><pre class="language-text"><code>import React,{useState} from 'react'
+
+function Child(props){
+  let {num} = props
+  return (
+  	&lt;div&gt;
+    	&lt;h2&gt;{num}&lt;/h2&gt;
+    &lt;/div&gt;
+  )
+  
+}
+
+export default function Father(){
+  const [num,setNum] = useState(10)
+  return (
+  	&lt;div&gt;
+    	&lt;Child num={num}&gt;&lt;/Child&gt;
+    &lt;/div&gt;
+  )
+}
+</code></pre></div><h4 id="子传父"><a href="#子传父" class="header-anchor">#</a> 子传父</h4> <ol><li><p>给儿子传函数</p></li> <li><p>儿子调用函数传值</p></li></ol> <div class="language-react extra-class"><pre class="language-text"><code>import React, { useState } from &quot;react&quot;;
+
+function Child(props) {
+  let { num, changeNum } = props;
+  return (
+    &lt;div&gt;
+      &lt;h2&gt;{num}&lt;/h2&gt;
+      &lt;button onClick={changeNum}&gt;按钮&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default function Father() {
+  const [num, setNum] = useState(10);
+  return (
+    &lt;div&gt;
+      &lt;Child num={num} changeNum={() =&gt; setNum(num + 1)}&gt;&lt;/Child&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre></div><h3 id="hook-多级组件传值"><a href="#hook-多级组件传值" class="header-anchor">#</a> Hook 多级组件传值</h3> <p>ctx.js</p> <div class="language-react extra-class"><pre class="language-text"><code>import {createContext} from &quot;react&quot;
+const ctx = createContext()
+
+export default ctx
+</code></pre></div><p>父辈组件</p> <div class="language-react extra-class"><pre class="language-text"><code>import React from &quot;react&quot;;
+import Baba from &quot;./Baba&quot;;
+import ctx from &quot;./ctx&quot;;
+let { Provider } = ctx;
+export default function Yeye() {
+  const jie = (v) =&gt; {
+    console.log(v);
+  };
+  return (
+    &lt;Provider value={{ name: &quot;苏东旭&quot;, fn: jie }}&gt;
+      &lt;div&gt;
+        yeye
+        &lt;hr /&gt;
+        &lt;Baba /&gt;
+      &lt;/div&gt;
+    &lt;/Provider&gt;
+  );
+}
+</code></pre></div><p>中间</p> <div class="language-react extra-class"><pre class="language-text"><code>import React from &quot;react&quot;;
+import Son from &quot;./Son&quot;;
+export default function Baba() {
+  return (
+    &lt;div&gt;
+      Baba
+      &lt;hr /&gt;
+      &lt;Son&gt;&lt;/Son&gt;
+      &lt;Sunzi /&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre></div><p>后代组件</p> <div class="language-react extra-class"><pre class="language-text"><code>import React from &quot;react&quot;;
+import { useContext } from &quot;react&quot;;
+import ctx from &quot;./ctx&quot;;
+
+export default function Son() {
+  const value = useContext(ctx);
+  return (
+    &lt;div&gt;
+      Son
+      &lt;p&gt;{value.name}&lt;/p&gt;
+      &lt;button
+        onClick={() =&gt; {
+          value.fn(&quot;苏东旭&quot;);
+        }}
+      &gt;
+        契机
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+</code></pre></div><h3 id="hook模拟生命周期"><a href="#hook模拟生命周期" class="header-anchor">#</a> Hook模拟生命周期</h3> <p>componentDidMount 请求数据 组件渲染完毕</p> <p>componentDidUpdate 数据更新完毕</p> <p>componentWillUnmount 页面关闭的时候</p> <p>useEffect(回调函数，数组)</p> <ol><li>第二个参数是空数组 [] ，不监听任何一个数据的变化 代替 componentDidMount</li> <li>第二个参数不写，监听所有内容，代替componentDidUpdate</li> <li>第二个参数 非空数组[有内容]  只监听 [] 里面的数据的改变 类似watch，不代替任何一个生命周期</li> <li>如果里面有return 函数，代表页面关闭的时候执行 代替componentWillUnmount</li></ol> <p>useEffect做请求数据，一定是空数组</p> <p>里面不支持async/await</p> <h3 id="hook获取dom元素"><a href="#hook获取dom元素" class="header-anchor">#</a> Hook获取DOM元素</h3> <p>useRef 获取DOM元素</p> <div class="language-react extra-class"><pre class="language-text"><code>import React from &quot;react&quot;;
+import { useRef } from &quot;react&quot;;
+
+export default function App6() {
+  const inp = useRef();
+  const box = useRef();
+
+  const dian = () =&gt; {
+    console.log(inp.current.value);
+    console.log(box.current);
+  };
+
+  return (
+    &lt;div&gt;
+      App6
+      &lt;input type=&quot;text&quot; ref={inp} /&gt;
+      &lt;div ref={box}&gt;盒子&lt;/div&gt;
+      &lt;button onClick={dian}&gt;获取dom&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre></div><h3 id="hook-计算属性"><a href="#hook-计算属性" class="header-anchor">#</a> Hook 计算属性</h3> <p>useMemo(回调函数，[监听的内容])</p> <div class="language-react extra-class"><pre class="language-text"><code>import React from &quot;react&quot;;
+import { useMemo } from &quot;react&quot;;
+import { useState } from &quot;react&quot;;
+
+export default function App7() {
+  const [num, setNum] = useState(10);
+  let total = useMemo(() =&gt; {
+    return num * 2;
+  }, [num]);
+  return (
+    &lt;div&gt;
+      &lt;p&gt;{num}&lt;/p&gt;
+      &lt;p&gt;{total}&lt;/p&gt;
+      &lt;button
+        onClick={() =&gt; {
+          setNum(num + 1);
+        }}
+      &gt;
+        按钮
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+</code></pre></div><h2 id="_6-路由"><a href="#_6-路由" class="header-anchor">#</a> 6. 路由</h2> <h3 id="路由切换原理"><a href="#路由切换原理" class="header-anchor">#</a> 路由切换原理</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>路由切换原理<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#/login<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点击跳转登录页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#/reg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点击跳转注册页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>routerview<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+      <span class="token comment">// 路由表</span>
+      <span class="token keyword">let</span> routes <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;#/login&quot;</span><span class="token operator">:</span><span class="token string">&quot;./login.html&quot;</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;#/reg&quot;</span><span class="token operator">:</span><span class="token string">&quot;./reg.html&quot;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// 当路由发生变化时 hashchange事件，重新加载 routes中的视图</span>
+      window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;hashchange&quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#routerview&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>routes<span class="token punctuation">[</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">]</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="安装路由"><a href="#安装路由" class="header-anchor">#</a> 安装路由</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> react-router-dom@6
+</code></pre></div><ul><li>在 src/router/index.jsx</li></ul> <div class="language-react extra-class"><pre class="language-text"><code>// 先安装路由 npm i react-router-dom@6
+// 这不仅仅是一个路由文件，它也是一个路由组件
+// BrowserRouter是一个路由组件（自带的history模式），同时还有一个HashRouter（自带hash模式）
+// 引入三个路由组件
+import { BrowserRouter, Routes, Route } from &quot;react-router-dom&quot;;
+
+// BrowserRouter 指定路由模式 HashRouter 两种路由模式
+// Routes 路由表
+// Route 路由
+
+// 1. 引入要跳转的组件
+
+import Home from &quot;../views/router/Home&quot;;
+import User from &quot;../views/router/User&quot;;
+
+// 2. 创建路由
+const router = (
+  &lt;BrowserRouter&gt;
+    &lt;Routes&gt;
+      &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;}&gt;&lt;/Route&gt;
+      &lt;Route path=&quot;/user&quot; element={&lt;User /&gt;}&gt;&lt;/Route&gt;
+    &lt;/Routes&gt;
+  &lt;/BrowserRouter&gt;
+);
+
+export default router;
+
+</code></pre></div><h3 id="子路由"><a href="#子路由" class="header-anchor">#</a> 子路由</h3> <h4 id="配置子路由"><a href="#配置子路由" class="header-anchor">#</a> 配置子路由</h4> <p>Route嵌套Route</p> <div class="language-react extra-class"><pre class="language-text"><code>&lt;Route&gt;
+	&lt;Route&gt;&lt;/Route&gt;
+&lt;/Route&gt;
+</code></pre></div><h4 id="子路由页面展示"><a href="#子路由页面展示" class="header-anchor">#</a> 子路由页面展示</h4> <div class="language-react extra-class"><pre class="language-text"><code>import {Outlet} from 'react-router-dom';
+
+&lt;Outlet&gt;&lt;/Outlet&gt;
+</code></pre></div><h3 id="路由跳转"><a href="#路由跳转" class="header-anchor">#</a> 路由跳转</h3> <h4 id="link方式"><a href="#link方式" class="header-anchor">#</a> Link方式</h4> <div class="language-react extra-class"><pre class="language-text"><code>import {Link} from &quot;react-router-dom&quot;;
+
+&lt;Link to=&quot;/路径&quot;&gt;标题&lt;/link&gt;
+</code></pre></div><h4 id="js方式"><a href="#js方式" class="header-anchor">#</a> JS方式</h4> <div class="language-react extra-class"><pre class="language-text"><code>import {useNavagate} from &quot;react-router-dom&quot;
+
+let navigate = useNavigate()
+
+const goHome=()=&gt;{
+  navigate(&quot;/Home&quot;)
+}
+
+&lt;button onClick={goHome}&gt;首页&lt;/button&gt;
+</code></pre></div><h3 id="路由传参"><a href="#路由传参" class="header-anchor">#</a> 路由传参</h3> <h4 id="_1-动态路由"><a href="#_1-动态路由" class="header-anchor">#</a> 1. 动态路由</h4> <p>优点：美观，但是需要修改路由配置文件</p> <h5 id="传参"><a href="#传参" class="header-anchor">#</a> 传参</h5> <ul><li>配置文件</li></ul> <div class="language-react extra-class"><pre class="language-text"><code>&lt;Route path=&quot;/路由规则/:id/:name/xxxxx&quot;&gt;&lt;/Route&gt;
+</code></pre></div><ul><li>路由传参</li></ul> <div class="language-react extra-class"><pre class="language-text"><code>// Link方式
+&lt;Link to=&quot;/路由规则/参数1/参数2/...&quot;&gt;首页&lt;/Link&gt;
+
+// JS方式
+import {useNavagate} from &quot;react-router-dom&quot;
+let navigate = useNavigate()
+
+const goHome=()=&gt;{
+  navigate(&quot;/路由规则/参数1/参数2/...&quot;)
+}
+
+&lt;button onClick={goHome}&gt;首页&lt;/button&gt;
+</code></pre></div><h5 id="接参"><a href="#接参" class="header-anchor">#</a> 接参</h5> <p>Hook</p> <div class="language-react extra-class"><pre class="language-text"><code>import (useParams) from &quot;react-router-dom&quot;
+
+let params = useParams()
+console.log(params)
+</code></pre></div><h4 id="_2-通过查询字符串"><a href="#_2-通过查询字符串" class="header-anchor">#</a> 2. 通过查询字符串</h4> <h5 id="传参-2"><a href="#传参-2" class="header-anchor">#</a> 传参</h5> <div class="language-react extra-class"><pre class="language-text"><code>//?id=19&amp;name=苏东旭
+// Link方式
+&lt;Link to=&quot;/路由规则?参数1=xxx&amp;参数2=xxx...&quot;&gt;首页&lt;/Link&gt;
+
+// JS方式
+import {useNavagate} from &quot;react-router-dom&quot;
+let navigate = useNavigate()
+
+const goHome=()=&gt;{
+  navigate(&quot;/路由规则?参数1=xxx&amp;参数2=xxx...&quot;)
+}
+
+&lt;button onClick={goHome}&gt;首页&lt;/button&gt;
+</code></pre></div><h5 id="接参-2"><a href="#接参-2" class="header-anchor">#</a> 接参</h5> <p>Hook</p> <div class="language-react extra-class"><pre class="language-text"><code>import {useSearchParams} from &quot;react-router-dom&quot;
+
+const [data] = useSearchParams()
+console.log(data.get('参数1'))
+</code></pre></div><h4 id="_3-通过navigate函数传参"><a href="#_3-通过navigate函数传参" class="header-anchor">#</a> 3. 通过navigate函数传参</h4> <h5 id="传参-3"><a href="#传参-3" class="header-anchor">#</a> 传参</h5> <p>添加第二个参数 {state:{}}</p> <div class="language-react extra-class"><pre class="language-text"><code>import {useNavigate} from &quot;react-router-dom&quot;
+let navigate = useNavigate()
+
+const goHome=()=&gt;{
+  navigate(&quot;/路由规则&quot;,{
+    state:{
+      id:17,
+    	name:&quot;小星星&quot;
+    }
+  })
+}
+
+&lt;button onClick={goHome}&gt;首页&lt;/button&gt;
+</code></pre></div><h5 id="接参-3"><a href="#接参-3" class="header-anchor">#</a> 接参</h5> <div class="language- extra-class"><pre class="language-text"><code>import (useLocation) from &quot;react-router-dom&quot;
+
+let location = useLocation()
+console.log(location.state)
+</code></pre></div><blockquote><p>总结</p> <p>传参  useNavigate</p> <p>接参  useLocation</p></blockquote> <h2 id="_7-redux状态管理"><a href="#_7-redux状态管理" class="header-anchor">#</a> 7. Redux状态管理</h2> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i redux react-redux
+</code></pre></div><h3 id="使用redux"><a href="#使用redux" class="header-anchor">#</a> 使用redux</h3> <p>redux只有两种属性</p> <ul><li>数据（自定义起名：baseState）</li> <li>修改（自定义起名：reducer）</li></ul> <h4 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h4> <div class="language-react extra-class"><pre class="language-text"><code>import {createStore} from &quot;redux&quot;
+
+// 初始值
+const baseState = {
+  const:10,
+  name:&quot;张三&quot;
+}
+
+// 设置数据和修改  state初始数据 action修改方法
+const reducer = (state=baseState,action)=&gt;{
+  // 必须先深拷贝
+  let nstate = JSON.parse(JSON.stringify(state))
+  //============================
+  	【把修改的方法写这里】
+    console.log(action)
+  	if(action.type === 'type值'){
+      //业务逻辑
+    }else if(action.type === 'type值'){
+      //业务逻辑
+    }
+  //============================
+  return nstate
+}
+
+
+// 创建仓库
+const store = createStore(reducer)
+// 开放出去
+export default store
+</code></pre></div><h4 id="传值"><a href="#传值" class="header-anchor">#</a> 传值</h4> <div class="language-react extra-class"><pre class="language-text"><code>//引入仓库
+import store from &quot;../../store&quot;
+//引入发送数据的组件
+import {Provider} from &quot;react-redux&quot;;
+
+
+//希望哪些后代能共用 redux的值就可以使用Provider进行包裹
+&lt;Provider store={store}&gt;
+
+&lt;/Provider&gt;
+</code></pre></div><h4 id="接取"><a href="#接取" class="header-anchor">#</a> 接取</h4> <div class="language-react extra-class"><pre class="language-text"><code>import {useSelector} from 'react-redux'
+
+const data = useSelector(state=&gt;state)
+console.log(data.键)
+</code></pre></div><h4 id="修改-2"><a href="#修改-2" class="header-anchor">#</a> 修改</h4> <div class="language-react extra-class"><pre class="language-text"><code>import {useDispatch} from 'react-redux';
+
+const dispatch = useDispatch()
+const fn = () =&gt;{
+  // dispatch() 可以直接调用 store/index.js的reducer方法
+  dispatch({
+    type:&quot;&quot;,  //必须有type，其他的随意
+    //数据直接发给reducer的action
+  })
+}
+
+&lt;button onClick={fn}&gt;&lt;/button&gt;
+</code></pre></div><blockquote><p>总结</p> <p>传值  Provider</p> <p>接值  useSelector</p> <p>修改  useDispatch</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.799c955b.js" defer></script><script src="/assets/js/2.b8e5fd1e.js" defer></script><script src="/assets/js/59.3b111ed5.js" defer></script>
+  </body>
+</html>
